@@ -7,9 +7,9 @@ Namespace refers to a subdirectory beginning with _ indicating the authorship of
 
 Code refers to any C# source code files and compiled assemblies, YML files in Resources and any scripts these may require such as the Tools subdirectory.
 
-The whole project is licensed under [AGPLv3](https://github.com/final-horizon/project-noosphere/blob/master/LICENSE-AGPLv3.TXT) and must be followed regardless of sublicensed parts of the project.
+The whole project is licensed under [AGPLv3](https://github.com/final-horizon/project-noosphere/blob/master/LICENSE-AGPLv3.txt) and must be followed regardless of sublicensed parts of the project.
 
-All code under the _Noosphere namespace or code commented with NS or Noosphere is licensed under [AGPLv3](https://github.com/final-horizon/project-noosphere/blob/master/LICENSE-AGPLv3.TXT).
+All code under the _Noosphere namespace or code commented with NS or Noosphere is licensed under [AGPLv3](https://github.com/final-horizon/project-noosphere/blob/master/LICENSE-AGPLv3.txt).
 
 All code including and prior to commit fbb3c79 for the content repository is from Space Station 14 and is sub-licensed under the [MIT license](https://github.com/final-horizon/project-noosphere/blob/master/LICENSE.TXT).  
 
