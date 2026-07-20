@@ -1,0 +1,139 @@
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformSweater1
+  name: sweater
+  suffix: "1"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/sweater1.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/sweater1.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformSweater2
+  name: sweater
+  suffix: "2"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/sweater2.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/sweater2.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformSweater3
+  name: sweater
+  suffix: "3"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/sweater3.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/sweater3.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformSweater4
+  name: sweater
+  suffix: "4"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/sweater4.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/sweater4.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformTourist1
+  name: tourist outfit
+  suffix: "1"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/tourist1.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/tourist1.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformTourist2
+  name: tourist outfit
+  suffix: "2"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/tourist2.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/tourist2.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformTourist3
+  name: tourist outfit
+  suffix: "3"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/tourist3.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/tourist3.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformTourist4
+  name: tourist outfit
+  suffix: "4"
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/tourist4.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/tourist4.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformSidor
+  name: sidor outfit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/sidor.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/sidor.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformTracksuit
+  name: tracksuit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/tracksuit.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/tracksuit.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformSailor
+  name: sailor outfit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/sailor.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/sailor.rsi
+
+- type: entity
+  parent: NSClothingUniformBase
+  id: NSClothingUniformGorka
+  name: gorka
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Uniforms/gorka.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Uniforms/gorka.rsi
