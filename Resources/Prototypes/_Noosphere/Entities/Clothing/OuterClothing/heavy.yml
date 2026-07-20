@@ -1,0 +1,74 @@
+- type: entity
+  parent: NSClothingOuterBaseHeavy
+  id: NSClothingOuterHeavyBerill5m
+  name: berill-5m suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/berill_5m.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/berill_5m.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.55 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseHeavy
+  id: NSClothingOuterHeavyBerill5mFreedom
+  name: freedom berill-5m suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/berill_5m_freedom.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/berill_5m_freedom.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.55 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseHeavy
+  id: NSClothingOuterHeavyClearSky
+  name: heavy clear sky suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/heavy_cs.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/heavy_cs.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.55 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseHeavy
+  id: NSClothingOuterHeavySkat9
+  name: skat-9 suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/skat_9.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/skat_9.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.55 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseHeavy
+  id: NSClothingOuterHeavySkat9Duty
+  name: duty skat-9 suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/skat_9_duty.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Heavy/skat_9_duty.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.55 # placeholder

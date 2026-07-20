@@ -1,0 +1,29 @@
+- type: entity
+  abstract: true
+  parent: ClothingOuterBase
+  id: NSClothingOuterBase
+
+- type: entity
+  abstract: true
+  parent: NSClothingOuterBase
+  id: NSClothingOuterBaseLight
+
+- type: entity
+  abstract: true
+  parent: NSClothingOuterBase
+  id: NSClothingOuterBaseMedium
+
+- type: entity
+  abstract: true
+  parent: NSClothingOuterBase
+  id: NSClothingOuterBaseHeavy
+
+- type: entity
+  abstract: true
+  parent: NSClothingOuterBase
+  id: NSClothingOuterBaseExosuit
+
+- type: entity
+  abstract: true
+  parent: NSClothingOuterBase
+  id: NSClothingOuterBaseScientific

@@ -1,0 +1,89 @@
+- type: entity
+  parent: NSClothingOuterBaseScientific
+  id: NSClothingOuterScientificSeva
+  name: seva suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseScientific
+  id: NSClothingOuterScientificSevaDuty
+  name: duty seva suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_duty.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_duty.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseScientific
+  id: NSClothingOuterScientificSevaMerc
+  name: merc seva suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_merc.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_merc.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseScientific
+  id: NSClothingOuterScientificSevaMonolith
+  name: monolith seva suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_mono.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_mono.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseScientific
+  id: NSClothingOuterScientificSSP99
+  name: ssp-99 suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseScientific
+  id: NSClothingOuterScientificSSP99M
+  name: ssp-99m suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99m.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99m.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80 # placeholder

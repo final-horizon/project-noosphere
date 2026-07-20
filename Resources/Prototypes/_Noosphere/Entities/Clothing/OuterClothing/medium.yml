@@ -1,0 +1,119 @@
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitStalker
+  name: stalker suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_stalker.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_stalker.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitBandit
+  name: bandit suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_bandit.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_bandit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitDuty
+  name: duty suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_duty.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_duty.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitFreedom
+  name: freedom suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_freedom.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_freedom.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitMerc
+  name: merc suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_merc.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_merc.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitMilitary
+  name: military suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_military.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_military.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitMonolith
+  name: monolith suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_mono.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_mono.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseMedium
+  id: NSClothingOuterMediumSuitClearSky
+  name: clear sky suit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_cs.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Medium/suit_cs.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.70 # placeholder

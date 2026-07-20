@@ -1,0 +1,104 @@
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightJacket
+  name: yellow stalker jacket
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightJacketWhite
+  name: white stalker jacket
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_white.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_white.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightJacketBandit
+  name: bandit jacket
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_bandit.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_bandit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightJacketDuty
+  name: duty jacket
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_duty.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_duty.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightJacketClearSky
+  name: clear sky jacket
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_cs.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_cs.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightCoatBanditBlack
+  name: black bandit coat
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/bandit_coat_black.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/bandit_coat_black.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightCoatBanditBrown
+  name: brown bandit coat
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/bandit_coat_brown.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/bandit_coat_brown.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder

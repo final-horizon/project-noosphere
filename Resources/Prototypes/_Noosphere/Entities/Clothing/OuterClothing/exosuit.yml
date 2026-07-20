@@ -1,0 +1,74 @@
+- type: entity
+  parent: NSClothingOuterBaseExosuit
+  id: NSClothingOuterExosuitStalker
+  name: exosuit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.40 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseExosuit
+  id: NSClothingOuterExosuitDuty
+  name: duty exosuit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_duty.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_duty.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.40 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseExosuit
+  id: NSClothingOuterExosuitFreedom
+  name: freedom exosuit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_freedom.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_freedom.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.40 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseExosuit
+  id: NSClothingOuterExosuitMerc
+  name: merc exosuit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_merc.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_merc.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.40 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseExosuit
+  id: NSClothingOuterExosuitMonolith
+  name: monolith exosuit
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_mono.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_mono.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.40 # placeholder
