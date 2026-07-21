@@ -1,5 +1,5 @@
 - type: entity
-  parent: NSClothingOuterBaseScientific
+  parent: [ NSClothingOuterBaseScientific, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterScientificSeva
   name: seva suit
   description: placeholder
@@ -8,13 +8,15 @@
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadFoldingSeva
   - type: Armor
     modifiers:
       coefficients:
         Piercing: 0.80 # placeholder
 
 - type: entity
-  parent: NSClothingOuterBaseScientific
+  parent: [ NSClothingOuterBaseScientific, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterScientificSevaDuty
   name: duty seva suit
   description: placeholder
@@ -23,13 +25,15 @@
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_duty.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_duty.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadFoldingSevaDuty
   - type: Armor
     modifiers:
       coefficients:
         Piercing: 0.80 # placeholder
 
 - type: entity
-  parent: NSClothingOuterBaseScientific
+  parent: [ NSClothingOuterBaseScientific, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterScientificSevaMerc
   name: merc seva suit
   description: placeholder
@@ -38,13 +42,15 @@
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_merc.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_merc.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadFoldingSevaMerc
   - type: Armor
     modifiers:
       coefficients:
         Piercing: 0.80 # placeholder
 
 - type: entity
-  parent: NSClothingOuterBaseScientific
+  parent: [ NSClothingOuterBaseScientific, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterScientificSevaMonolith
   name: monolith seva suit
   description: placeholder
@@ -53,13 +59,15 @@
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_mono.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/seva_mono.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadFoldingSevaMonolith
   - type: Armor
     modifiers:
       coefficients:
         Piercing: 0.80 # placeholder
 
 - type: entity
-  parent: NSClothingOuterBaseScientific
+  parent: [ NSClothingOuterBaseScientific, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterScientificSSP99
   name: ssp-99 suit
   description: placeholder
@@ -68,13 +76,15 @@
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadFoldingSSP99
   - type: Armor
     modifiers:
       coefficients:
         Piercing: 0.80 # placeholder
 
 - type: entity
-  parent: NSClothingOuterBaseScientific
+  parent: [ NSClothingOuterBaseScientific, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterScientificSSP99M
   name: ssp-99m suit
   description: placeholder
@@ -83,6 +93,8 @@
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99m.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Scientific/ssp_99m.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadFoldingSSP99M
   - type: Armor
     modifiers:
       coefficients:

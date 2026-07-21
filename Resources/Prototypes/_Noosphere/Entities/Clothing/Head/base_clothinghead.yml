@@ -1,0 +1,27 @@
+- type: entity
+  abstract: true
+  id: NSClothingHeadBase
+  parent: BaseItem
+  components:
+  - type: Clothing
+    slots:
+    - HEAD
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Small
+
+- type: entity
+  abstract: true
+  id: NSClothingHeadHardsuitBase
+  components:
+  - type: Sprite
+    state: icon
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Clothing
+    equipSound: /Audio/Mecha/mechmove03.ogg
+    unequipSound: /Audio/Mecha/mechmove03.ogg
+    quickEquip: false
+    slots: [ HEAD ]
+  - type: GroupExamine

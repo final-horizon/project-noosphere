@@ -5,6 +5,15 @@
 
 - type: entity
   abstract: true
+  id: NSClothingOuterBaseHardsuit
+  components:
+  - type: ToggleableClothing
+    slot: head
+    verbText: toggle-clothing-verb-helmet
+    action: ActionToggleSuitPiece
+
+- type: entity
+  abstract: true
   parent: NSClothingOuterBase
   id: NSClothingOuterBaseLight
 

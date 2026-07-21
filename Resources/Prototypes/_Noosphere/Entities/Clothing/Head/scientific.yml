@@ -1,0 +1,65 @@
+- type: entity
+  parent: NSClothingHeadHardsuitBase
+  id: NSClothingHeadFoldingSeva
+  name: seva helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Scientific/seva.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Scientific/seva.rsi
+
+- type: entity
+  parent: NSClothingHeadHardsuitBase
+  id: NSClothingHeadFoldingSevaDuty
+  name: duty seva helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Scientific/seva_duty.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Scientific/seva_duty.rsi
+
+- type: entity
+  parent: NSClothingHeadHardsuitBase
+  id: NSClothingHeadFoldingSevaMerc
+  name: merc seva helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Scientific/seva_merc.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Scientific/seva_merc.rsi
+
+- type: entity
+  parent: NSClothingHeadHardsuitBase
+  id: NSClothingHeadFoldingSevaMonolith
+  name: monolith seva helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Scientific/seva_mono.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Scientific/seva_mono.rsi
+
+- type: entity
+  parent: NSClothingHeadHardsuitBase
+  id: NSClothingHeadFoldingSSP99
+  name: ssp-99 helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Scientific/ssp_99.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Scientific/ssp_99.rsi
+
+- type: entity
+  parent: NSClothingHeadHardsuitBase
+  id: NSClothingHeadFoldingSSP99M
+  name: ssp-99m helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Scientific/ssp_99m.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Scientific/ssp_99m.rsi
