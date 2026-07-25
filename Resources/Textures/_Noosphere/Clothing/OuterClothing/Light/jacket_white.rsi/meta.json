@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "taken from https://github.com/STALKER-SS13/STALKER-13",
+  "copyright": "taken from https://github.com/STALKER-SS13/STALKER-13 and modified by DallaSallaD",
   "size": {
     "x": 32,
     "y": 32
@@ -12,6 +12,14 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
       "directions": 4
     }
   ]
