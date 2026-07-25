@@ -1,6 +1,6 @@
 - type: entity
   name: Glock
-  parent: BaseWeaponPistol
+  parent: NSBaseWeaponPistol
   id: NSBaseWeaponPistolGlock
   description: placeholder
   components:

@@ -1,6 +1,6 @@
 - type: entity
   name: NSBasePistol
-  parent: BaseItem
+  parent: BaseWeaponPistol
   id: NSBaseWeaponPistol
   description: a pistol.
   abstract: true

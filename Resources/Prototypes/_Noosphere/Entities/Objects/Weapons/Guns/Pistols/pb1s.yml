@@ -1,6 +1,6 @@
 - type: entity
   name: PB1S
-  parent: BaseWeaponPistol
+  parent: NSBaseWeaponPistol
   id: NSBaseWeaponPistolPB1S
   description: placeholder
   components:

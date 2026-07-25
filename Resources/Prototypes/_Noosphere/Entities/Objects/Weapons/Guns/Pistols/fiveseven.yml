@@ -1,11 +1,11 @@
 - type: entity
-  name: USP
+  name: Five Seven
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolUsp
+  id: NSBaseWeaponPistolFiveSeven
   description: placeholder
   components:
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/usp.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/fiveseven.rsi
   - type: Gun
     selectedMode: SemiAuto
     availableModes:

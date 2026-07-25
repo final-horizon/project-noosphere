@@ -1,11 +1,11 @@
 - type: entity
-  name: USP
+  name: CZ 83
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolUsp
+  id: NSBaseWeaponPistolCz83
   description: placeholder
   components:
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/usp.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/cz83.rsi
   - type: Gun
     selectedMode: SemiAuto
     availableModes:

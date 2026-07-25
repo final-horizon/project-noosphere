@@ -1,11 +1,11 @@
 - type: entity
-  name: USP
+  name: Marta
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolUsp
+  id: NSBaseWeaponPistolMarta
   description: placeholder
   components:
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/usp.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/marta.rsi
   - type: Gun
     selectedMode: SemiAuto
     availableModes:
@@ -32,3 +32,12 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+
+- type: entity
+  name: Marta Silver
+  parent: NSBaseWeaponPistolMarta
+  id: NSBaseWeaponPistolMartaSilver
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/martasilver.rsi

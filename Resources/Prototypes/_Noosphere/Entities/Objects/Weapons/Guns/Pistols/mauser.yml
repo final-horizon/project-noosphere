@@ -1,6 +1,6 @@
 - type: entity
   name: Mauser
-  parent: BaseWeaponPistol
+  parent: NSBaseWeaponPistol
   id: NSBaseWeaponPistolMauser
   description: placeholder
   components:

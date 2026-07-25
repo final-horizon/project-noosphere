@@ -1,6 +1,6 @@
 - type: entity
   name: SIP
-  parent: BaseWeaponPistol
+  parent: NSBaseWeaponPistol
   id: NSBaseWeaponPistolSip
   description: placeholder
   components:

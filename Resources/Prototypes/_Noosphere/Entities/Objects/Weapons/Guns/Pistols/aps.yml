@@ -1,6 +1,6 @@
 - type: entity
   name: APS
-  parent: BaseWeaponPistol
+  parent: NSBaseWeaponPistol
   id: NSBaseWeaponPistolAsp
   description: placeholder
   components:

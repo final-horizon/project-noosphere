@@ -1,6 +1,6 @@
 - type: entity
   name: TT30
-  parent: BaseWeaponPistol
+  parent: NSBaseWeaponPistol
   id: NSBaseWeaponPistolTt30
   description: placeholder
   components:

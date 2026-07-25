@@ -1,11 +1,11 @@
 - type: entity
-  name: USP
+  name: Walther PP
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolUsp
+  id: NSBaseWeaponPistolWaltherPP
   description: placeholder
   components:
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/usp.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/waltherpp.rsi
   - type: Gun
     selectedMode: SemiAuto
     availableModes:

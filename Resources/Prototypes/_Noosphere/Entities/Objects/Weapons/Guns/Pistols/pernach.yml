@@ -1,6 +1,6 @@
 - type: entity
   name: Pernach
-  parent: BaseWeaponPistol
+  parent: NSBaseWeaponPistol
   id: NSBaseWeaponPistolPernach
   description: placeholder
   components:
