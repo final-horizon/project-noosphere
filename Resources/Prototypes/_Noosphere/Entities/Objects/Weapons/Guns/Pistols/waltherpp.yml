@@ -1,7 +1,7 @@
 - type: entity
   name: Walther PP
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolWaltherPP
+  id: NSWeaponPistolWaltherPP
   description: placeholder
   components:
   - type: Sprite

@@ -1,7 +1,7 @@
 - type: entity
   name: AK74
   parent: NSBaseWeaponRifle
-  id: NSBaseWeaponRifleAK74
+  id: NSWeaponRifleAK74
   description: placeholder
   components:
   - type: Sprite

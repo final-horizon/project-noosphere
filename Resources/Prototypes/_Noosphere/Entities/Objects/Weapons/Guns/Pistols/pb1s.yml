@@ -1,7 +1,7 @@
 - type: entity
   name: PB1S
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolPB1S
+  id: NSWeaponPistolPB1S
   description: placeholder
   components:
   - type: Sprite

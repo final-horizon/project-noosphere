@@ -1,7 +1,7 @@
 - type: entity
   name: Walther P38
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolWaltherP38
+  id: NSWeaponPistolWaltherP38
   description: placeholder
   components:
   - type: Sprite

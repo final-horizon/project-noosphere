@@ -1,7 +1,7 @@
 - type: entity
   name: Mauser
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolMauser
+  id: NSWeaponPistolMauser
   description: placeholder
   components:
   - type: Sprite

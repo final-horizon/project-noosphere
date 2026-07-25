@@ -1,7 +1,7 @@
 - type: entity
   name: Fort 12
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolFort12
+  id: NSWeaponPistolFort12
   description: placeholder
   components:
   - type: Sprite

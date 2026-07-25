@@ -1,7 +1,7 @@
 - type: entity
   name: Cora
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolCora
+  id: NSWeaponPistolCora
   description: placeholder
   components:
   - type: Sprite

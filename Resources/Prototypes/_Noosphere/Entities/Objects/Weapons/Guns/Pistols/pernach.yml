@@ -1,7 +1,7 @@
 - type: entity
   name: Pernach
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolPernach
+  id: NSWeaponPistolPernach
   description: placeholder
   components:
   - type: Sprite

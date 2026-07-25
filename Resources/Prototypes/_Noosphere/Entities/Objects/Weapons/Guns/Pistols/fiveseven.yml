@@ -1,7 +1,7 @@
 - type: entity
   name: Five Seven
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolFiveSeven
+  id: NSWeaponPistolFiveSeven
   description: placeholder
   components:
   - type: Sprite

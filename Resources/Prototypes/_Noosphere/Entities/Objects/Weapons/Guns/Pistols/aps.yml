@@ -1,7 +1,7 @@
 - type: entity
   name: APS
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolAsp
+  id: NSWeaponPistolAsp
   description: placeholder
   components:
   - type: Sprite

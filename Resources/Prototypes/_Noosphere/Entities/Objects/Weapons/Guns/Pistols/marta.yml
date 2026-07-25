@@ -1,7 +1,7 @@
 - type: entity
   name: Marta
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolMarta
+  id: NSWeaponPistolMarta
   description: placeholder
   components:
   - type: Sprite
@@ -35,8 +35,8 @@
 
 - type: entity
   name: Marta Silver
-  parent: NSBaseWeaponPistolMarta
-  id: NSBaseWeaponPistolMartaSilver
+  parent: NSWeaponPistolMarta
+  id: NSWeaponPistolMartaSilver
   description: placeholder
   components:
   - type: Sprite

@@ -1,0 +1,18 @@
+
+- type: entity
+  name: Chaser
+  parent: [NSBaseWeaponShotgun, BaseGunWieldable]
+  id: NSWeaponShotgunChaser
+  description: placeholder
+  components:
+  - type: Item
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/chaser.rsi
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/chaser.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/chaser.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1
+  - type: GunSpreadModifier
+    spread: 0.6

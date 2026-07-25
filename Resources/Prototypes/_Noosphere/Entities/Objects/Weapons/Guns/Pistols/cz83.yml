@@ -1,7 +1,7 @@
 - type: entity
   name: CZ 83
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolCz83
+  id: NSWeaponPistolCz83
   description: placeholder
   components:
   - type: Sprite

@@ -1,7 +1,7 @@
 - type: entity
   name: Luger
   parent: NSBaseWeaponPistol
-  id: NSBaseWeaponPistolLuger
+  id: NSWeaponPistolLuger
   description: placeholder
   components:
   - type: Sprite

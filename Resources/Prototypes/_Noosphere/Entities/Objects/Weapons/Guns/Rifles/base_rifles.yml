@@ -1,6 +1,6 @@
 - type: entity
   name: NSBaseWeaponRifle
-  parent: [BaseItem, BaseGunWieldable]
+  parent: BaseWeaponRifle
   id: NSBaseWeaponRifle
   description: NS base rifle.
   abstract: true
