@@ -1,5 +1,5 @@
 - type: entity
-  parent: NSClothingOuterBaseExosuit
+  parent: [NSClothingOuterBaseExosuit, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterExosuitStalker
   name: exosuit
   description: placeholder
@@ -8,13 +8,15 @@
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadExoStalker
   - type: Armor
     modifiers:
       coefficients:
-        Piercing: 0.40 # placeholder
+        Piercing: 0.85 # placeholder
 
 - type: entity
-  parent: NSClothingOuterBaseExosuit
+  parent: [NSClothingOuterExosuitStalker, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterExosuitDuty
   name: duty exosuit
   description: placeholder
@@ -23,13 +25,11 @@
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_duty.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_duty.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Piercing: 0.40 # placeholder
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadExoDuty
 
 - type: entity
-  parent: NSClothingOuterBaseExosuit
+  parent: [NSClothingOuterExosuitStalker, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterExosuitFreedom
   name: freedom exosuit
   description: placeholder
@@ -38,13 +38,11 @@
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_freedom.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_freedom.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Piercing: 0.40 # placeholder
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadExoFreedom
 
 - type: entity
-  parent: NSClothingOuterBaseExosuit
+  parent: [NSClothingOuterExosuitStalker, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterExosuitMerc
   name: merc exosuit
   description: placeholder
@@ -53,13 +51,11 @@
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_merc.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_merc.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Piercing: 0.40 # placeholder
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadExoMerc
 
 - type: entity
-  parent: NSClothingOuterBaseExosuit
+  parent: [NSClothingOuterExosuitStalker, NSClothingHeadHardsuitBase ]
   id: NSClothingOuterExosuitMonolith
   name: monolith exosuit
   description: placeholder
@@ -68,7 +64,5 @@
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_mono.rsi
   - type: Clothing
     sprite: _Noosphere/Clothing/OuterClothing/Exosuits/exo_mono.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Piercing: 0.40 # placeholder
+  - type: ToggleableClothing
+    clothingPrototype: NSClothingHeadExoMono
