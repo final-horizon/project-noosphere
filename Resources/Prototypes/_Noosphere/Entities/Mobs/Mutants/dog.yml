@@ -1,0 +1,111 @@
+- type: entity
+  name: blind dog
+  id: NSMobMutantDog1
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Its a dog.
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHostileCompound
+      blackboard:
+        NavSmash: !type:Bool
+          true
+    - type: NpcFactionMember
+      factions:
+      - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _Noosphere/Mobs/Mutants/dog1.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.40
+          density: 80
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+    - type: MobState
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        45: Dead
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 3.5
+      baseSprintSpeed: 4
+    - type: Stamina
+      baseCritThreshold: 100
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: alive
+        Dead:
+          Base: dead
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: MutantStepHoof
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcBite
+      soundHit:
+        collection: MutantAttackDog
+      damage:
+        types:
+          Blunt: 7
+          Slash: 15
+    - type: Tag
+      tags:
+      - FootstepSound
+      - Mutant
+    - type: Vocal
+      emoteSounds: MutantDog
+    - type: Deathgasp
+      prototype: MutantDeathgasp
+    - type: AutoEmote
+      emotes:
+      - MutantIdle
+    - type: Speech
+      allowedEmotes:
+        - MutantDeathgasp
+        - MutantIdle
+
+- type: entity
+  name: blind dog
+  id: NSMobMutantDog2
+  parent: NSMobMutantDog1
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _Noosphere/Mobs/Mutants/dog2.rsi
+
+- type: entity
+  name: pseudodog
+  id: NSMobMutantPseudodog
+  parent: NSMobMutantDog1
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _Noosphere/Mobs/Mutants/pseudodog.rsi
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        55: Dead
+    - type: MeleeWeapon
+      soundHit:
+        collection: NSMutantAttackPseudodog
+      damage:
+        types:
+          Blunt: 9
+          Slash: 18
+    - type: Vocal
+      emoteSounds: MutantPseudodog

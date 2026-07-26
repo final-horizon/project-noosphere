@@ -1,0 +1,68 @@
+- type: emote
+  id: MutantDeathgasp
+  category: Vocal
+  name: mutant deathgasp
+  available: false
+  whitelist:
+    tags:
+    - Mutant
+
+- type: emote
+  id: MutantIdle
+  category: Vocal
+  name: mutant idle
+  available: false
+  whitelist:
+    tags:
+    - Mutant
+
+# emote sounds
+- type: emoteSounds
+  id: MutantBoar
+  params:
+    variation: 0.125
+  sounds:
+    MutantDeathgasp:
+      collection: MutantDeathBoar
+    MutantIdle:
+      collection: MutantIdleBoar
+
+- type: emoteSounds
+  id: MutantDog
+  params:
+    variation: 0.125
+  sounds:
+    MutantDeathgasp:
+      collection: MutantDeathDog
+    MutantIdle:
+      collection: MutantIdleDog
+
+- type: emoteSounds
+  id: MutantPseudodog
+  params:
+    variation: 0.125
+  sounds:
+    MutantDeathgasp:
+      collection: MutantDeathPseudodog
+    MutantIdle:
+      collection: MutantIdlePseudodog
+
+- type: emoteSounds
+  id: MutantFlesh
+  params:
+    variation: 0.125
+  sounds:
+    MutantDeathgasp:
+      collection: MutantDeathFlesh
+    MutantIdle:
+      collection: MutantIdleFlesh
+
+# idle sounds
+- type: autoEmote
+  id: MutantIdle
+  emote: MutantIdle
+  interval: 3
+  chance: 0.2
+  ignoreActionBlocker: true
+  force: true
+  hiddenFromChatWindow: true

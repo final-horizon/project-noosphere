@@ -1,4 +1,4 @@
-﻿using Content.Server.Chat.Systems;
+using Content.Server.Chat.Systems;
 using Content.Server.Speech.Muting;
 using Content.Shared.Mobs;
 using Content.Shared.Speech.Muting;
@@ -21,7 +21,7 @@ public sealed partial class DeathgaspSystem: EntitySystem
     private void OnMobStateChanged(EntityUid uid, DeathgaspComponent component, MobStateChangedEvent args)
     {
         // don't deathgasp if they arent going straight from crit to dead
-        if (args.NewMobState != MobState.Dead || args.OldMobState != MobState.Critical)
+        if (args.NewMobState != MobState.Dead || !(args.OldMobState == MobState.Critical || args.OldMobState == MobState.Alive)) // Noosphere change - allow mobs without a crit state to deathgasp
             return;
 
         Deathgasp(uid, component);

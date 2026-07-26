@@ -1,0 +1,92 @@
+# Death
+- type: soundCollection
+  id: MutantDeathBoar
+  files:
+  - /Audio/_Noosphere/Mutants/Death/boar_death.ogg
+
+- type: soundCollection
+  id: MutantDeathDog
+  files:
+  - /Audio/_Noosphere/Mutants/Death/dog_death.ogg
+
+- type: soundCollection
+  id: MutantDeathFlesh
+  files:
+  - /Audio/_Noosphere/Mutants/Death/flesh_death.ogg
+
+- type: soundCollection
+  id: MutantDeathPseudodog
+  files:
+  - /Audio/_Noosphere/Mutants/Death/pdog_death.ogg
+
+# Attack
+- type: soundCollection
+  id: MutantAttackDog
+  files:
+  - /Audio/_Noosphere/Mutants/Attack/dog_attack.ogg
+  - /Audio/_Noosphere/Mutants/Attack/dog_attack2.ogg
+  - /Audio/_Noosphere/Mutants/Attack/dog_attack3.ogg
+
+- type: soundCollection
+  id: MutantAttackPseudodog
+  files:
+  - /Audio/_Noosphere/Mutants/Attack/pdog_attack.ogg
+  - /Audio/_Noosphere/Mutants/Attack/pdog_attack1.ogg
+  - /Audio/_Noosphere/Mutants/Attack/pdog_attack2.ogg
+  - /Audio/_Noosphere/Mutants/Attack/pdog_attack3.ogg
+
+- type: soundCollection
+  id: MutantAttackFlesh
+  files:
+  - /Audio/_Noosphere/Mutants/Attack/flesh_attack.ogg
+  - /Audio/_Noosphere/Mutants/Attack/flesh_attack1.ogg
+  - /Audio/_Noosphere/Mutants/Attack/flesh_attack2.ogg
+  - /Audio/_Noosphere/Mutants/Attack/flesh_attack3.ogg
+
+- type: soundCollection
+  id: MutantAttackBoar
+  files:
+  - /Audio/_Noosphere/Mutants/Attack/boar_attack.ogg
+
+# Idle
+- type: soundCollection
+  id: MutantIdleDog
+  files:
+  - /Audio/_Noosphere/Mutants/Idle/bdog_idle_1.ogg
+  - /Audio/_Noosphere/Mutants/Idle/bdog_idle_2.ogg
+  - /Audio/_Noosphere/Mutants/Idle/bdog_idle_3.ogg
+  - /Audio/_Noosphere/Mutants/Idle/bdog_idle_4.ogg
+
+- type: soundCollection
+  id: MutantIdleBoar
+  files:
+  - /Audio/_Noosphere/Mutants/Idle/boar_idle_1.ogg
+  - /Audio/_Noosphere/Mutants/Idle/boar_idle_2.ogg
+  - /Audio/_Noosphere/Mutants/Idle/boar_idle_3.ogg
+
+- type: soundCollection
+  id: MutantIdleFlesh
+  files:
+  - /Audio/_Noosphere/Mutants/Idle/flesh_idle_1.ogg
+  - /Audio/_Noosphere/Mutants/Idle/flesh_idle_2.ogg
+
+- type: soundCollection
+  id: MutantIdlePseudodog
+  files:
+  - /Audio/_Noosphere/Mutants/Idle/pdog_idle_1.ogg
+  - /Audio/_Noosphere/Mutants/Idle/pdog_idle_2.ogg
+  - /Audio/_Noosphere/Mutants/Idle/pdog_idle_3.ogg
+  - /Audio/_Noosphere/Mutants/Idle/pdog_idle_4.ogg
+
+# Step
+- type: soundCollection
+  id: MutantStepHoof
+  files:
+  - /Audio/_Noosphere/Mutants/Step/hoof1.ogg
+  - /Audio/_Noosphere/Mutants/Step/hoof2.ogg
+  - /Audio/_Noosphere/Mutants/Step/hoof3.ogg
+  - /Audio/_Noosphere/Mutants/Step/hoof4.ogg
+  - /Audio/_Noosphere/Mutants/Step/hoof5.ogg
+  - /Audio/_Noosphere/Mutants/Step/hoof6.ogg
+  - /Audio/_Noosphere/Mutants/Step/hoof7.ogg
+  - /Audio/_Noosphere/Mutants/Step/hoof8.ogg

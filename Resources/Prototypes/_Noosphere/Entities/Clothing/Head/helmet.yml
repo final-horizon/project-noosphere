@@ -1,0 +1,89 @@
+- type: entity
+  parent: NSClothingHeadBase
+  id: NSClothingHeadHelmetSteel
+  name: steel helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Helmets/steel.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Helmets/steel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.90 # placeholder
+
+- type: entity
+  parent: NSClothingHeadBase
+  id: NSClothingHeadHelmetSphere
+  name: sphere helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Helmets/sphere.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Helmets/sphere.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.90 # placeholder
+
+- type: entity
+  parent: NSClothingHeadBase
+  id: NSClothingHeadHelmetSkat
+  name: skat helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Helmets/skat.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Helmets/skat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.90 # placeholder
+
+- type: entity
+  parent: NSClothingHeadBase
+  id: NSClothingHeadHelmetMercGas
+  name: merc gasmask helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Helmets/merc.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Helmets/merc.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.90 # placeholder
+
+- type: entity
+  parent: NSClothingHeadBase
+  id: NSClothingHeadHelmetBalistic
+  name: balistic helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Helmets/balistic.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Helmets/steel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.90 # placeholder
+
+- type: entity
+  parent: NSClothingHeadBase
+  id: NSClothingHeadHelmetAssaultMerc
+  name: merc assault helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Helmets/assault_merc.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Helmets/assault_merc.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.90 # placeholder
