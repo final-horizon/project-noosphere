@@ -7,7 +7,9 @@
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Pistols/mauser.rsi
   - type: Gun
-    selectedMode: SemiAuto # Override of BaseWeaponPistol to default to full-auto
+    selectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/pistol_shot.ogg
   - type: ItemSlots
     slots:
       gun_magazine:

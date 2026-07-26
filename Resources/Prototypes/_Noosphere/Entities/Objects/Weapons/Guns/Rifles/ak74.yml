@@ -18,7 +18,7 @@
       - FullAuto
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/ak74_shot.ogg
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
@@ -27,8 +27,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineLightRifle
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        insertSound: /Audio/_Noosphere/Weapons/Guns/Load/ak74_load.ogg
+        ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_ak74_open.ogg
         priority: 2
         whitelist:
           tags:

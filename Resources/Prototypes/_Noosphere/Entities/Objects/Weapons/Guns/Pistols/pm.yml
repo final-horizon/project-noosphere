@@ -10,13 +10,15 @@
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/pm_shot.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistol
-        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        insertSound: /Audio/_Noosphere/Weapons/Guns/Load/pm_load.ogg
+        ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_pm_open.ogg
         priority: 2
         whitelist:
           tags:

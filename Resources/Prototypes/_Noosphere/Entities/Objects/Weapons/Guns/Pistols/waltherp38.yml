@@ -10,6 +10,8 @@
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/walther_shoot.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
