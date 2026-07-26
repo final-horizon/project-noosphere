@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken/modified from ProtivogaSpriter at https://github.com/STALKER-SS13/STALKER-13/commit/0c2c4146e349036ddd6a9b165b71cbc892ef6dcd",
+    "copyright": "taken from https://github.com/STALKER-SS13/STALKER-13",
     "size": {
         "x": 32,
         "y": 32
