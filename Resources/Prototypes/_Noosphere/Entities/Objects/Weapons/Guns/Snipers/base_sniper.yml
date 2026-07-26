@@ -1,0 +1,6 @@
+- type: entity
+  name: NSBaseWeaponSniper
+  parent: BaseWeaponSniper
+  id: NSBaseWeaponSniper
+  description: A rooty tooty point and shooty.
+  abstract: true

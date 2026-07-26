@@ -1,0 +1,38 @@
+- type: entity
+  name: Vintorez
+  parent: [NSBaseWeaponSniper, BaseGunWieldable]
+  id: NSWeaponSniperVintorez
+  description: placeholder
+  components:
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,5,1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Snipers/vintorez.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Snipers/vintorez.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: CustomSpriteAmmoCounter
+    loadedAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/not_spent.png
+    spentAmmoSprite: Interface/ItemStatus/Sniper_Cartriges/spent.png
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeAntiMateriel
+    capacity: 20
+    proto: CartridgeAntiMateriel
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.25
+    sprintModifier: 0.25
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
