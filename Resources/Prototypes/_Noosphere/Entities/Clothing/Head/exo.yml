@@ -1,0 +1,58 @@
+- type: entity
+  parent: NSClothingHeadHardsuitBase
+  id: NSClothingHeadExoStalker
+  name: exosuit helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Exo/stalker.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Exo/stalker.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80 # placeholder
+
+- type: entity
+  parent: NSClothingHeadExoStalker
+  id: NSClothingHeadExoDuty
+  name: duty exosuit helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Exo/duty.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Exo/duty.rsi
+
+- type: entity
+  parent: NSClothingHeadExoStalker
+  id: NSClothingHeadExoFreedom
+  name: freedom exosuit helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Exo/freedom.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Exo/freedom.rsi
+
+- type: entity
+  parent: NSClothingHeadExoStalker
+  id: NSClothingHeadExoMerc
+  name: merc exosuit helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Exo/merc.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Exo/merc.rsi
+
+- type: entity
+  parent: NSClothingHeadExoStalker
+  id: NSClothingHeadExoMono
+  name: monolith exosuit helmet
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/Head/Exo/mono.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/Head/Exo/mono.rsi

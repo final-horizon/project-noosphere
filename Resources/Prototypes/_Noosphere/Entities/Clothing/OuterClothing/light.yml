@@ -102,3 +102,18 @@
     modifiers:
       coefficients:
         Piercing: 0.85 # placeholder
+
+- type: entity
+  parent: NSClothingOuterBaseLight
+  id: NSClothingOuterLightJacketFreedom
+  name: freedom jacket
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_freedom.rsi
+  - type: Clothing
+    sprite: _Noosphere/Clothing/OuterClothing/Light/jacket_freedom.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85 # placeholder
