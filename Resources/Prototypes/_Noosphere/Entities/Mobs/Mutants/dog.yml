@@ -102,7 +102,7 @@
         55: Dead
     - type: MeleeWeapon
       soundHit:
-        collection: NSMutantAttackPseudodog
+        collection: MutantAttackPseudodog
       damage:
         types:
           Blunt: 9
