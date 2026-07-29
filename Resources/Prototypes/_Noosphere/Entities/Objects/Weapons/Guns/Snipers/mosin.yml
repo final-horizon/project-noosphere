@@ -8,11 +8,6 @@
     sprite: _Noosphere/Objects/Weapons/Guns/Snipers/mosin.rsi
   - type: Clothing
     sprite: _Noosphere/Objects/Weapons/Guns/Snipers/mosin.rsi
-    layers:
-    - state: base
-    - state: base1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
-      visible: false
   - type: Appearance
   - type: AmmoCounter
   - type: Gun
