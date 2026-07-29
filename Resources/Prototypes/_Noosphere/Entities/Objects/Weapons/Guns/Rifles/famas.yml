@@ -1,0 +1,56 @@
+- type: entity
+  name: Famas
+  parent: NSBaseWeaponRifle
+  id: NSWeaponRifleFamas
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Rifles/famas.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Rifles/famas.rsi
+  - type: Gun
+    fireRate: 10
+    burstFireRate: 12
+    burstCooldown: 0.1
+    selectedMode: Burst
+    availableModes:
+      - Burst
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/groza_shot.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/_Noosphere/Weapons/Guns/Load/groza_load.ogg
+        ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_groza_open.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

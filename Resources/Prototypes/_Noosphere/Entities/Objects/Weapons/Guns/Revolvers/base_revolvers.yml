@@ -1,0 +1,6 @@
+- type: entity
+  name: NSBaseWeaponRevolver
+  parent: BaseWeaponRevolver
+  id: NSBaseWeaponRevolver
+  description: A rooty tooty point and shooty.
+  abstract: true

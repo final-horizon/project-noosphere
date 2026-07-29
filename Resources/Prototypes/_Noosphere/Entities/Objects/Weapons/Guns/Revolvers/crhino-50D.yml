@@ -1,0 +1,20 @@
+- type: entity
+  name: CRhino 50D
+  parent: NSBaseWeaponRevolver
+  id: NSWeaponRevolvercrhino50d
+  description: Placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Revolvers/crhino50d.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Revolvers/crhino50d.rsi
+  - type: Item
+    storedOffset: 0,-2
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+

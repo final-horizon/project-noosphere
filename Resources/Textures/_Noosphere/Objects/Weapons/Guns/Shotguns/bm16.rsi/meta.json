@@ -11,9 +11,6 @@
             "name": "icon"
         },
         {
-            "name": "bolt-open"
-        },
-        {
             "name": "equipped-BACKPACK",
             "directions": 4
         },

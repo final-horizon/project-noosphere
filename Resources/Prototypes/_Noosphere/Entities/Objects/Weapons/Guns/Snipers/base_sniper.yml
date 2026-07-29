@@ -6,10 +6,11 @@
   abstract: true
   components:
   - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    size: Huge
-    shape:
-    - 0,0,5,1
+    size: Large
   - type: Clothing
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
     quickEquip: false
@@ -24,25 +25,7 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineLightRifle
-        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineLightRifle
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeLightRifle
   - type: ContainerContainer
     containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
+      ballistic-ammo: !type:Container
+        ents: []
