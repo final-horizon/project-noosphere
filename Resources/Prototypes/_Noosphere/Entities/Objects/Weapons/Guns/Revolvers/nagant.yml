@@ -1,0 +1,17 @@
+- type: entity
+  name: Nagant
+  parent: NSBaseWeaponRevolver
+  id: NSWeaponRevolverNagant
+  description: Placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Revolvers/nagant.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Revolvers/nagant.rsi
+  - type: Item
+    storedOffset: 0,-2
+  - type: RevolverAmmoProvider
+    capacity: 7
+    chambers: [ True, True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null, null ]
+

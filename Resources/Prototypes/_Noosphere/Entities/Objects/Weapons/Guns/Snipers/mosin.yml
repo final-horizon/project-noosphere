@@ -1,0 +1,40 @@
+- type: entity
+  name: Mosin
+  parent: [NSBaseWeaponSniper, BaseGunWieldable]
+  id: NSWeaponSniperMosin
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Snipers/mosin.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Snipers/mosin.rsi
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: CartridgeLightRifle
+    whitelist:
+      tags:
+      - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    fillBaseName: base
+    inHandsFillBaseName: -fill-
+    inHandsMaxFillLevels: 1
+    equippedFillBaseName: -fill-
+    equippedMaxFillLevels: 1
+  - type: SolutionTransfer
+    maxTransferAmount: 2
+  - type: GunRequiresWield
+

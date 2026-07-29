@@ -1,0 +1,54 @@
+- type: entity
+  name: AKSU74
+  parent: NSBaseWeaponRifle
+  id: NSWeaponRifleAKSU74
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Rifles/aksu74.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 50
+    maxAngle: 95
+    angleIncrease: 1.53
+    fireRate: 6
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/ak74u_shot.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/_Noosphere/Weapons/Guns/Load/ak74_load.ogg
+        ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_ak74_open.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

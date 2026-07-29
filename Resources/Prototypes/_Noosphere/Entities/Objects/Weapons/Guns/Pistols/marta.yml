@@ -1,0 +1,45 @@
+- type: entity
+  name: Marta
+  parent: NSBaseWeaponPistol
+  id: NSWeaponPistolMarta
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/marta.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/marta_shot.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistol
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
+  name: Marta Silver
+  parent: NSWeaponPistolMarta
+  id: NSWeaponPistolMartaSilver
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/martasilver.rsi

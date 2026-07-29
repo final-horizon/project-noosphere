@@ -1,0 +1,32 @@
+- type: entity
+  name: SKS
+  parent: [NSBaseWeaponSniper, BaseGunWieldable]
+  id: NSWeaponSniperSKS
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Snipers/sks.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Snipers/sks.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/sks_shot.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: CartridgeLightRifle
+    whitelist:
+      tags:
+      - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: Appearance

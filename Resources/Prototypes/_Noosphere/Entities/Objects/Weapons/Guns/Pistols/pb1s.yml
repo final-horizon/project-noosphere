@@ -1,0 +1,37 @@
+- type: entity
+  name: PB1S
+  parent: NSBaseWeaponPistol
+  id: NSWeaponPistolPB1S
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Pistols/pb1s.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/silencer.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolHighCapacity
+        insertSound: /Audio/_Noosphere/Weapons/Guns/Load/pm_load.ogg
+        ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_pm_open.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistol
+            - MagazinePistolHighCapacity
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot

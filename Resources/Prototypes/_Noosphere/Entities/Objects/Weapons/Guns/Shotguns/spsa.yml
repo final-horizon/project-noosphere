@@ -1,0 +1,28 @@
+
+- type: entity
+  name: SPSA
+  parent: [NSBaseWeaponShotgun, BaseGunWieldable]
+  id: NSWeaponShotgunSPSA
+  description: placeholder
+  components:
+  - type: Item
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/spsa.rsi
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/spsa.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/spsa.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/spsa_shot.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun
+    capacity: 8
+    proto: ShellShotgun
+    soundInsert:
+      path: /Audio/_Noosphere/Weapons/Guns/Load/spsa_load.ogg
+  - type: GunSpreadModifier
+    spread: 0.6

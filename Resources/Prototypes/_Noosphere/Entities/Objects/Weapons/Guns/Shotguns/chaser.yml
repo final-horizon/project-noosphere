@@ -1,0 +1,28 @@
+
+- type: entity
+  name: Chaser
+  parent: [NSBaseWeaponShotgun, BaseGunWieldable]
+  id: NSWeaponShotgunChaser
+  description: placeholder
+  components:
+  - type: Item
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/chaser.rsi
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/chaser.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/chaser.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/bm16_shot.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun
+    capacity: 6
+    proto: ShellShotgun
+    soundInsert:
+      path: /Audio/_Noosphere/Weapons/Guns/Load/chaser_load.ogg
+  - type: GunSpreadModifier
+    spread: 0.6

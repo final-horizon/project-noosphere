@@ -1,0 +1,32 @@
+- type: entity
+  name: PKM
+  id: NSWeaponLightMachineGunPKM
+  parent: NSBaseWeaponLightMachineGun
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/LMGs/pkm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/LMGs/pkm.rsi
+  - type: Gun
+    minAngle: 24
+    maxAngle: 45
+    angleIncrease: 4
+    angleDecay: 16
+    fireRate: 15
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/pkm_shot.ogg
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+

@@ -1,0 +1,22 @@
+
+- type: entity
+  name: BM 16 Sawn-off
+  parent: [NSBaseWeaponShotgun]
+  id: NSWeaponShotgunBm16Sawn
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/bm16-sawn.rsi
+  - type: Item
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/bm16-sawn.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 3
+  - type: GunSpreadModifier
+    spread: 1
+  - type: BallisticAmmoProvider
+    capacity: 2
+  - type: Construction
+    graph: ShotgunSawn
+    node: start
+    deconstructionTarget: null

@@ -1,0 +1,28 @@
+
+- type: entity
+  name: BM 16
+  parent: [NSBaseWeaponShotgun, BaseGunWieldable]
+  id: NSWeaponShotgunBm16
+  description: placeholder
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/bm16.rsi
+  - type: Item
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/bm16.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/bm16.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/bm16_shot.ogg
+  - type: GunSpreadModifier
+    spread: 0.6
+  - type: BallisticAmmoProvider
+    capacity: 2
+    soundInsert:
+      path: /Audio/_Noosphere/Weapons/Guns/Load/bm16_load.ogg
+  - type: Construction
+    graph: ShotgunSawn
+    node: start
+    deconstructionTarget: null

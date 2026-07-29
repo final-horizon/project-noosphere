@@ -1,0 +1,28 @@
+
+- type: entity
+  name: Ithacam 37
+  parent: [NSBaseWeaponShotgun, BaseGunWieldable]
+  id: NSWeaponShotgunIthacam37
+  description: placeholder
+  components:
+  - type: Item
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/ithacam37.rsi
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/ithacam37.rsi
+  - type: Clothing
+    sprite: _Noosphere/Objects/Weapons/Guns/Shotguns/ithacam37.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/_Noosphere/Weapons/Guns/Gunshots/bm16_shot.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun
+    capacity: 8
+    proto: ShellShotgun
+    soundInsert:
+      path: /Audio/_Noosphere/Weapons/Guns/Load/chaser_load.ogg
+  - type: GunSpreadModifier
+    spread: 0.4
