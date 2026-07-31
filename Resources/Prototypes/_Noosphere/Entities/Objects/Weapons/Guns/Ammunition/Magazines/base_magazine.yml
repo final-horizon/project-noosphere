@@ -1,0 +1,33 @@
+- type: entity
+  id: NSBaseMagazineRifleAKM
+  name: "AKM magazine"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle762
+      - NSMagazineRifleAKM
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle762x39
+    capacity: 20
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/akm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
