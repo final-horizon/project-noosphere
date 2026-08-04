@@ -3,14 +3,18 @@
 ## Rifles
 - type: Tag
   id: NSMagazineRifle762
-
 - type: Tag
-  id: NSMagazineRifleAKM
-  
+  id: NSMagazineRifle545
 
 
 # Cartridges
 
 ## Rifles
 - type: Tag
+  id: NSCartridgeRifle
+
+- type: Tag
   id: NSCartridgeRifle762x39
+
+- type: Tag
+  id: NSCartridgeRifle545x39

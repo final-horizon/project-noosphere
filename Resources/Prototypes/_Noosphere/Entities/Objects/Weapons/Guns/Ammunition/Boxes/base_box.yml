@@ -7,8 +7,8 @@
     mayTransfer: true
     whitelist:
       tags:
-        - NSCartridgeRifle762x39
-    proto: NSCartridgeRifle762x39
+        - NSCartridgeRifle
+    proto: null
     capacity: 30
   - type: Item
     size: Small

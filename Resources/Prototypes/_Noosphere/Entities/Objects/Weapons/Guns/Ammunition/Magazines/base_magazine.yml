@@ -1,26 +1,19 @@
 - type: entity
-  id: NSBaseMagazineRifleAKM
-  name: "AKM magazine"
+  id: NSBaseMagazineRifle
+  name: "magazine"
   parent: BaseItem
   abstract: true
   components:
-  - type: Tag
-    tags:
-      - NSMagazineRifle762
-      - NSMagazineRifleAKM
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
     mayTransfer: true
-    whitelist:
-      tags:
-        - NSCartridgeRifle762x39
-    capacity: 20
+    capacity: 30
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/akm.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x39/30.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -31,3 +24,39 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
+
+
+- type: entity
+  id: NSBaseMagazineRifle762x39
+  name: "762x39 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle762
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle762x39
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x39/30.rsi
+
+
+- type: entity
+  id: NSBaseMagazineRifle545x39
+  name: "5.45x39 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle545
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle545x39
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/545x39/30.rsi

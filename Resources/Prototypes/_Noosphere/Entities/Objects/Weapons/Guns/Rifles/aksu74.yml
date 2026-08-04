@@ -35,14 +35,14 @@
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+            - NSMagazineRifle545
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+            - NSCartridgeRifle545x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
