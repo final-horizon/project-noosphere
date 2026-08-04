@@ -60,3 +60,22 @@
         - NSCartridgeRifle545x39
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/545x39/30.rsi
+
+
+
+- type: entity
+  id: NSBaseMagazineRifle556x45
+  name: "5.56x45 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle556
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle556x45
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/30.rsi

@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseBullet
-  id: NSBulletRifle762x39FMJ
+  id: NSBulletRifle556x45FMJ
   categories: [ HideSpawnMenu ]
-  name: bullet (7.62x39 FMJ)
+  name: bullet (5.56x45 FMJ)
   components:
   - type: Projectile
     damage:
@@ -11,9 +11,9 @@
 
 - type: entity
   parent: BaseBullet
-  id: NSBulletRifle762x39HP
+  id: NSBulletRifle556x45HP
   categories: [ HideSpawnMenu ]
-  name: bullet (7.62x39 HP)
+  name: bullet (5.56x45 HP)
   components:
   - type: Projectile
     damage:

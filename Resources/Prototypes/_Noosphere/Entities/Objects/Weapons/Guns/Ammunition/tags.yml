@@ -5,7 +5,8 @@
   id: NSMagazineRifle762
 - type: Tag
   id: NSMagazineRifle545
-
+- type: Tag
+  id: NSMagazineRifle556
 
 # Cartridges
 
@@ -18,3 +19,6 @@
 
 - type: Tag
   id: NSCartridgeRifle545x39
+
+- type: Tag
+  id: NSCartridgeRifle556x45
