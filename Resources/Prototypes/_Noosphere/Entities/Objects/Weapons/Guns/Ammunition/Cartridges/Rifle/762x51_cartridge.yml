@@ -1,0 +1,44 @@
+- type: entity
+  abstract: true
+  parent: NSBaseCartridgeRifle
+  id: NSBaseCartridgeRifle762x51
+  name: cartridge (7.62x51)
+  components:
+  - type: Tag
+    tags:
+      - NSCartridgeRifle762x51
+      - NSCartridgeRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  parent: NSBaseCartridgeRifle762x51
+  id: NSCartridgeRifle762x51M885
+  name: cartridge (7.62x51 M885)
+  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletRifle762x51M885
+
+
+- type: entity
+  parent: NSBaseCartridgeRifle762x51
+  id: NSCartridgeRifle762x51M80
+  name: cartridge (7.62x51 M80)
+  description: A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletRifle762x51M80
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"

@@ -35,7 +35,7 @@
         priority: 2
         whitelist:
           tags:
-            - NSMagazineRifle545
+            - NSMagazineRifle545x39
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber

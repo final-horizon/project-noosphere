@@ -1,13 +1,13 @@
 - type: entity
-  parent: NSBaseMagazineBoxRifle
-  id: NSMagazineBox545x39FMJ
-  name: Box of 5.45x39 FMJ (30)
-  description: Ammo box containing 5.45x39 FMJ
+  parent: NSBaseBoxRifle
+  id: NSBox762x39FMJ
+  name: Box of 7.62x39 FMJ (30)
+  description: Ammo box containing 7.62x39 FMJ
   components:
   - type: BallisticAmmoProvider
-    proto: NSCartridgeRifle545x39FMJ
+    proto: NSCartridgeRifle762x39FMJ
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/545x39_box.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Rifle/762x39_box.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -21,15 +21,15 @@
   - type: Appearance
 
 - type: entity
-  parent: NSBaseMagazineBoxRifle
-  id: NSMagazineBox545x39HP
-  name: Box of 5.45x39 HP (30)
-  description: Ammo box containing 5.45x39 HP
+  parent: NSBaseBoxRifle
+  id: NSBox762x39HP
+  name: Box of 7.62x39 HP (30)
+  description: Ammo box containing 7.62x39 HP
   components:
   - type: BallisticAmmoProvider
-    proto: NSCartridgeRifle545x39HP
+    proto: NSCartridgeRifle762x39HP
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/545x39_box.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Rifle/762x39_box.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

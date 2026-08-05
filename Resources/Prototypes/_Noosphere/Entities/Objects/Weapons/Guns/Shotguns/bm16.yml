@@ -23,6 +23,6 @@
     soundInsert:
       path: /Audio/_Noosphere/Weapons/Guns/Load/bm16_load.ogg
   - type: Construction
-    graph: ShotgunSawn
+    graph: NSWeaponShotgunBm16Sawn
     node: start
     deconstructionTarget: null

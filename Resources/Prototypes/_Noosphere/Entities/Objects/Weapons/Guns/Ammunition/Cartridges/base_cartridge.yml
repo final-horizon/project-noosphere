@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: NSBaseCartridgeRifle
+  id: NSBaseCartridge
   components:
   - type: Sprite
     drawdepth: Items
@@ -31,6 +31,7 @@
   - type: Tag
     tags:
     - NSCartridgeRifle
+    - NSShellShotgun
   - type: Item
     size: Tiny
   - type: SpaceGarbage
@@ -41,3 +42,42 @@
         volume: -1
   - type: StaticPrice
     price: 1
+
+- type: entity
+  id: NSBaseCartridgeRifle
+  name: NS cartridge (.20 rifle)
+  parent: NSBaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSCartridgeRifle
+  - type: CartridgeAmmo
+    proto: BulletRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: NSBaseShellShotgun
+  name: NS shell (.50)
+  parent: NSBaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - NSShellShotgun
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals

@@ -34,7 +34,7 @@
   components:
   - type: Tag
     tags:
-      - NSMagazineRifle762
+      - NSMagazineRifle762x39
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
@@ -45,6 +45,23 @@
 
 
 - type: entity
+  id: NSBaseMagazineRifle762x51
+  name: "7.62x51 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle762x51
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle762x51
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/30.rsi
+
+- type: entity
   id: NSBaseMagazineRifle545x39
   name: "5.45x39 magazine"
   parent: NSBaseMagazineRifle
@@ -52,7 +69,7 @@
   components:
   - type: Tag
     tags:
-      - NSMagazineRifle545
+      - NSMagazineRifle545x39
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
@@ -71,7 +88,7 @@
   components:
   - type: Tag
     tags:
-      - NSMagazineRifle556
+      - NSMagazineRifle556x45
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
