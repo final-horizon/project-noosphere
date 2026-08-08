@@ -11,9 +11,9 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+    - state: fmj
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - state: fmj
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -33,9 +33,9 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+    - state: hp
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    - state: hp
   - type: MagazineVisuals
     magState: mag
     steps: 2

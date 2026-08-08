@@ -22,7 +22,7 @@
 
 - type: entity
   parent: NSBaseBoxRifle
-  id: NSMagazineBox762x51M80
+  id: NSBox762x51M80
   name: Box of 7.62x51 M80 (30)
   description: Ammo box containing 7.62x51 M80
   components:

@@ -11,13 +11,13 @@
       "name": "base"
     },
     {
-      "name": "mag-1"
-    },
-    {
       "name": "m885"
     },
     {
       "name": "m80"
+    },
+    {
+      "name": "mag-1"
     }
   ]
 }

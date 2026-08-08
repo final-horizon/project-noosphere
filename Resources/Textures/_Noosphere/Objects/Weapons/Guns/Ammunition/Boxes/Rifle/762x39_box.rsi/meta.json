@@ -11,13 +11,13 @@
       "name": "base"
     },
     {
-      "name": "mag-1"
-    },
-    {
       "name": "fmj"
     },
     {
       "name": "hp"
+    },
+    {
+      "name": "mag-1"
     }
   ]
 }
