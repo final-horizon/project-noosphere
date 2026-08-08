@@ -1,0 +1,51 @@
+
+- type: entity
+  parent: NSBaseBoxShotgun
+  id: NSBoxShotgunSlug12
+  name: Box of Slug 12
+  description: placeholder
+  components:
+    - type: Sprite
+      sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Shotgun/slug_12.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+    - type: BallisticAmmoProvider
+      proto: NSShellShotgunSlug12
+      whitelist:
+        tags:
+        - NSShellShotgun
+      capacity: 16
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+
+- type: entity
+  parent: NSBaseBoxShotgun
+  id: NSBoxShotgunSlug20
+  name: Box of Slugs 20
+  description: placeholder
+  components:
+    - type: Sprite
+      sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Shotgun/slug_20.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+    - type: BallisticAmmoProvider
+      proto: NSShellShotgunSlug20
+      whitelist:
+        tags:
+        - NSShellShotgun
+      capacity: 16
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance

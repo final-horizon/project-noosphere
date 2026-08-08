@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseBullet
+  id: NSBulletRifle762x51M885
+  categories: [ HideSpawnMenu ]
+  name: bullet (7.62x51 M885)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45
+        Blunt: 4
+
+- type: entity
+  parent: BaseBullet
+  id: NSBulletRifle762x51M80
+  categories: [ HideSpawnMenu ]
+  name: bullet (7.62x51 M80)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 35
+        Piercing: 12

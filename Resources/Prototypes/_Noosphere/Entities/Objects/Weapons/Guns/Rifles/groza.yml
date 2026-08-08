@@ -1,7 +1,7 @@
 - type: entity
-  name: Groza
+  name: OC-14 Groza
   parent: NSBaseWeaponRifle
-  id: NSWeaponRifleGroza
+  id: NSWeaponRifleOC14Groza
   description: placeholder
   components:
   - type: Sprite
@@ -31,20 +31,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: NSMagazineRifle762x3930FMJ
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/groza_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_groza_open.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+            - NSMagazineRifle762x39
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+            - NSCartridgeRifle762x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

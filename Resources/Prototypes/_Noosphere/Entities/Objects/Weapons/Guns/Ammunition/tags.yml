@@ -1,0 +1,37 @@
+# Magazines
+
+## Rifles
+- type: Tag
+  id: NSMagazineRifle762x39
+
+- type: Tag
+  id: NSMagazineRifle545x39
+
+- type: Tag
+  id: NSMagazineRifle556x45
+
+- type: Tag
+  id: NSMagazineRifle762x51
+
+# Cartridges
+
+## Shells
+
+- type: Tag
+  id: NSShellShotgun
+
+## Rifles
+- type: Tag
+  id: NSCartridgeRifle
+
+- type: Tag
+  id: NSCartridgeRifle762x39
+
+- type: Tag
+  id: NSCartridgeRifle545x39
+
+- type: Tag
+  id: NSCartridgeRifle556x45
+
+- type: Tag
+  id: NSCartridgeRifle762x51

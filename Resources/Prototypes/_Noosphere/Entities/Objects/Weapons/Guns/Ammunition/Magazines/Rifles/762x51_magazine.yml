@@ -1,0 +1,85 @@
+- type: entity
+  id: NSMagazineRifle762x5130M885
+  name: "762x51 Magazine 30x"
+  parent: NSBaseMagazineRifle762x51
+  description: 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 30
+    proto: NSCartridgeRifle762x51M885
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x51/30.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NSMagazineRifle762x5120M885
+  name: "762x51 Magazine 20x"
+  parent: NSBaseMagazineRifle762x51
+  description: 20-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 20
+    proto: NSCartridgeRifle762x51M885
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x51/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+
+- type: entity
+  id: NSMagazineRifle762x5130Empty
+  name: "762x51 Magazine 30x"
+  suffix: empty
+  parent: NSBaseMagazineRifle762x51
+  description: 30-round double stack magazine for combat rifles.
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x51/30.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NSMagazineRifle762x5120Empty
+  name: "762x51 Magazine 20x"
+  parent: NSBaseMagazineRifle762x51
+  description: 20-round double stack magazine for combat rifles.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 20
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x51/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NSMagazineRifle762x5110Empty
+  name: "762x51 Magazine 10x"
+  parent: NSBaseMagazineRifle762x51
+  description: 10-round double stack magazine for combat rifles.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x51/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

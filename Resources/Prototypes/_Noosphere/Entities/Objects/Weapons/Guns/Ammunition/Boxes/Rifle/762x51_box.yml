@@ -1,0 +1,43 @@
+- type: entity
+  parent: NSBaseBoxRifle
+  id: NSBox762x51M885
+  name: Box of 7.62x51 M885 (30)
+  description: Ammo box containing 7.62x51 M885
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeRifle762x51M885
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Rifle/762x51_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: m885
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: NSBaseBoxRifle
+  id: NSBox762x51M80
+  name: Box of 7.62x51 M80 (30)
+  description: Ammo box containing 7.62x51 M80
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeRifle762x51M80
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Rifle/762x51_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: m80
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

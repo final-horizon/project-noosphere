@@ -1,0 +1,22 @@
+- type: entity
+  parent: BaseBullet
+  id: NSBulletRifle545x39FMJ
+  categories: [ HideSpawnMenu ]
+  name: bullet (5.45x39 FMJ)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 17
+
+- type: entity
+  parent: BaseBullet
+  id: NSBulletRifle545x39HP
+  categories: [ HideSpawnMenu ]
+  name: bullet (5.45x39 HP)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+        Piercing: 6

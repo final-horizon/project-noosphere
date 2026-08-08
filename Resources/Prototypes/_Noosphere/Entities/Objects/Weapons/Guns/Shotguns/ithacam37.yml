@@ -20,8 +20,9 @@
     whitelist:
       tags:
       - ShellShotgun
+      - NSShellShotgun
     capacity: 8
-    proto: ShellShotgun
+    proto: null
     soundInsert:
       path: /Audio/_Noosphere/Weapons/Guns/Load/chaser_load.ogg
   - type: GunSpreadModifier
