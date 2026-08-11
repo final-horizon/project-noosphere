@@ -8,7 +8,7 @@ using Content.Shared.Movement.Events;
 using Robust.Shared.GameStates;
 using Robust.Shared.Input;
 using Robust.Shared.Input.Binding;
-using Robust.Shared.Physics;
+using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -57,7 +57,6 @@ namespace Content.Shared.Movement.Systems
             SubscribeLocalEvent<InputMoverComponent, ComponentGetState>(OnMoverGetState);
             SubscribeLocalEvent<InputMoverComponent, ComponentHandleState>(OnMoverHandleState);
             SubscribeLocalEvent<InputMoverComponent, EntParentChangedMessage>(OnInputParentChange);
-            SubscribeLocalEvent<InputMoverComponent, AnchorStateChangedEvent>(OnAnchorState);
 
             SubscribeLocalEvent<FollowedComponent, EntParentChangedMessage>(OnFollowedParentChange);
 
@@ -135,7 +134,7 @@ namespace Content.Shared.Movement.Systems
             args.State = new InputMoverComponentState()
             {
                 CanMove = entity.Comp.CanMove,
-                RelativeEntity = GetNetEntity(entity.Comp.RelativeEntity),
+                RelativeEntity = TerminatingOrDeleted(entity.Comp.RelativeEntity) ? null : GetNetEntity(entity.Comp.RelativeEntity),
                 LerpTarget = entity.Comp.LerpTarget,
                 HeldMoveButtons = entity.Comp.HeldMoveButtons,
                 RelativeRotation = entity.Comp.RelativeRotation,
@@ -150,7 +149,7 @@ namespace Content.Shared.Movement.Systems
 
         public bool DiagonalMovementEnabled { get; private set; }
 
-        protected virtual void HandleShuttleInput(EntityUid uid, ShuttleButtons button, ushort subTick, bool state) {}
+        protected virtual void HandleShuttleInput(EntityUid uid, ShuttleButtons button, ushort subTick, bool state) { }
 
         public void RotateCamera(EntityUid uid, Angle angle)
         {
@@ -271,15 +270,15 @@ namespace Content.Shared.Movement.Systems
             var mapId = args.Transform.MapUid;
 
             // If we change maps then reset eye rotation entirely.
-            if (oldMapId != mapId)
-            {
-                entity.Comp.RelativeEntity = relative;
-                entity.Comp.TargetRelativeRotation = Angle.Zero;
-                entity.Comp.RelativeRotation = Angle.Zero;
-                entity.Comp.LerpTarget = TimeSpan.Zero;
-                Dirty(entity.Owner, entity.Comp);
-                return;
-            }
+            //if (oldMapId != mapId) //CrystallEdge: No, we dont! Our zLevels is different maps, and we dont wanna reset rotation each time when we move through zLevels
+            //{
+            //    entity.Comp.RelativeEntity = relative;
+            //    entity.Comp.TargetRelativeRotation = Angle.Zero;
+            //    entity.Comp.RelativeRotation = Angle.Zero;
+            //    entity.Comp.LerpTarget = TimeSpan.Zero;
+            //    Dirty(entity.Owner, entity.Comp);
+            //    return;
+            //}
 
             // If we go on a grid and back off then just reset the accumulator.
             if (relative == entity.Comp.RelativeEntity)
@@ -297,27 +296,21 @@ namespace Content.Shared.Movement.Systems
             Dirty(entity.Owner, entity.Comp);
         }
 
-        private void OnAnchorState(Entity<InputMoverComponent> entity, ref AnchorStateChangedEvent args)
-        {
-            if (!args.Anchored)
-                PhysicsSystem.SetBodyType(entity, BodyType.KinematicController);
-        }
-
         private void HandleDirChange(Entity<InputMoverComponent?> entity, Direction dir, ushort subTick, bool state)
         {
+            var hasMover = MoverQuery.Resolve(entity.Owner, ref entity.Comp, false);
+
             // Relayed movement just uses the same keybinds given we're moving the relayed entity
             // the same as us.
-            if (!MoverQuery.Resolve(entity, ref entity.Comp))
-                return;
 
             // TODO: Should move this into HandleMobMovement itself.
-            if (entity.Comp.CanMove && RelayQuery.TryComp(entity, out var relayMover))
+            if (hasMover && entity.Comp != null && entity.Comp.CanMove && RelayQuery.TryComp(entity, out var relayMover))
             {
                 DebugTools.Assert(relayMover.RelayEntity != entity.Owner);
                 DebugTools.AssertNotNull(relayMover.RelayEntity);
 
                 if (MoverQuery.TryGetComponent(entity, out var mover))
-                    SetMoveInput((entity, mover), MoveButtons.None);
+                    SetMoveInput((entity.Owner, mover), MoveButtons.None);
 
                 HandleDirChange(relayMover.RelayEntity, dir, subTick, state);
                 return;
@@ -334,7 +327,10 @@ namespace Content.Shared.Movement.Systems
                 RaiseLocalEvent(xform.ParentUid, ref relayMoveEvent);
             }
 
-            SetVelocityDirection((entity, entity.Comp), dir, subTick, state);
+            if (!hasMover || entity.Comp == null)
+                return;
+
+            SetVelocityDirection(new Entity<InputMoverComponent>(entity.Owner, entity.Comp), dir, subTick, state);
         }
 
         private void OnInputInit(Entity<InputMoverComponent> entity, ref ComponentInit args)
@@ -394,7 +390,7 @@ namespace Content.Shared.Movement.Systems
             {
                 walk = mover.CurTickWalkMovement;
                 sprint = mover.CurTickSprintMovement;
-                remainingFraction = (ushort.MaxValue - mover.LastInputSubTick) / (float) ushort.MaxValue;
+                remainingFraction = (ushort.MaxValue - mover.LastInputSubTick) / (float)ushort.MaxValue;
             }
 
             var curDir = DirVecForButtons(mover.HeldMoveButtons) * remainingFraction;
@@ -408,7 +404,7 @@ namespace Content.Shared.Movement.Systems
                 walk += curDir;
             }
 
-            // Logger.Info($"{curDir}{walk}{sprint}");
+            // Logger.GetSawmill("content").Info($"{curDir}{walk}{sprint}");
             return (walk, sprint);
         }
 
@@ -419,7 +415,7 @@ namespace Content.Shared.Movement.Systems
         /// </summary>
         public void SetVelocityDirection(Entity<InputMoverComponent> entity, Direction direction, ushort subTick, bool enabled)
         {
-            // Logger.Info($"[{_gameTiming.CurTick}/{subTick}] {direction}: {enabled}");
+            // Logger.GetSawmill("content").Info($"[{_gameTiming.CurTick}/{subTick}] {direction}: {enabled}");
 
             var bit = direction switch
             {
@@ -440,7 +436,7 @@ namespace Content.Shared.Movement.Systems
 
             if (subTick >= entity.Comp.LastInputSubTick)
             {
-                var fraction = (subTick - entity.Comp.LastInputSubTick) / (float) ushort.MaxValue;
+                var fraction = (subTick - entity.Comp.LastInputSubTick) / (float)ushort.MaxValue;
 
                 ref var lastMoveAmount = ref entity.Comp.Sprinting ? ref entity.Comp.CurTickSprintMovement : ref entity.Comp.CurTickWalkMovement;
 
@@ -475,7 +471,7 @@ namespace Content.Shared.Movement.Systems
 
         public virtual void SetSprinting(Entity<InputMoverComponent> entity, ushort subTick, bool walking)
         {
-            // Logger.Info($"[{_gameTiming.CurTick}/{subTick}] Sprint: {enabled}");
+            // Logger.GetSawmill("content").Info($"[{_gameTiming.CurTick}/{subTick}] Sprint: {enabled}");
 
             SetMoveInput(entity, subTick, walking, MoveButtons.Walk);
         }
@@ -483,7 +479,7 @@ namespace Content.Shared.Movement.Systems
         /// <summary>
         ///     Retrieves the normalized direction vector for a specified combination of movement keys.
         /// </summary>
-        private Vector2 DirVecForButtons(MoveButtons buttons)
+        public Vector2 DirVecForButtons(MoveButtons buttons)
         {
             // key directions are in screen coordinates
             // _moveDir is in world coordinates
