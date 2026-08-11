@@ -22,7 +22,7 @@ public sealed partial class GameMapPrototype : IPrototype
     public string ID { get; private set; } = default!;
 
     [DataField]
-    public float MaxRandomOffset = 1000f;
+    public float MaxRandomOffset = 0f; // NS
 
     /// <summary>
     /// Turns out some of the map files are actually secretly grids. Excellent. I love map loading code.
@@ -51,6 +51,29 @@ public sealed partial class GameMapPrototype : IPrototype
     /// The stations this map contains. The names should match with the BecomesStation components.
     /// </summary>
     public IReadOnlyDictionary<string, StationConfig> Stations => _stations;
+
+    // CMU start
+    /// <summary>
+    /// CrystallEdge: Additional maps loaded below the main map (at negative depth levels).
+    /// Each map in the list is loaded from top to bottom at depth -1, -2, ..., -N,
+    /// with <see cref="MapPath"/> at depth 0.
+    /// </summary>
+    [DataField]
+    public List<ResPath> MapsBelow = new();
+
+    /// <summary>
+    /// CrystallEdge: additional maps loaded above the main map (at positive depth levels).
+    /// Each map in the list is loaded at depth 1, 2, ..., N. <see cref="MapPath"/> works as depth 0.
+    /// </summary>
+    [DataField]
+    public List<ResPath> MapsAbove = new();
+
+    /// <summary>
+    /// CrystallEdge: ability to setup shared components for all zLevels
+    /// </summary>
+    [DataField]
+    public ComponentRegistry ZLevelsComponentOverrides = new();
+    // CMU end
 
     /// <summary>
     /// Performs a shallow clone of this map prototype, replacing <c>MapPath</c> with the argument.

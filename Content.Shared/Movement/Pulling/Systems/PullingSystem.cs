@@ -25,6 +25,7 @@ using Content.Shared.Standing;
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
 using Robust.Shared.Input.Binding;
+using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
@@ -497,6 +498,118 @@ public sealed partial class PullingSystem : EntitySystem
 
         return TogglePull((puller.Pulling.Value, pullable), pullerUid);
     }
+
+    // CMU start - used for zlevels i guess
+    public bool TryDetachPullJointForTransfer(EntityUid pullerUid, EntityUid pullableUid,
+        PullerComponent? pullerComp = null,
+        PullableComponent? pullableComp = null)
+    {
+        if (!ResolveActivePullRelationship(pullerUid, pullableUid, ref pullerComp, ref pullableComp))
+            return false;
+
+        var resolvedPullable = pullableComp!;
+
+        if (_timing.ApplyingState)
+            return true;
+
+        if (resolvedPullable.PullJointId is not { } pullJointId)
+            return true;
+
+        resolvedPullable.PullJointId = null;
+        RemovePullJoint(pullableUid, pullerUid, pullJointId);
+        Dirty(pullableUid, resolvedPullable);
+        return true;
+    }
+
+    public bool TryRefreshPullJointForTransfer(EntityUid pullerUid, EntityUid pullableUid,
+        PullerComponent? pullerComp = null,
+        PullableComponent? pullableComp = null)
+    {
+        if (!ResolveActivePullRelationship(pullerUid, pullableUid, ref pullerComp, ref pullableComp))
+            return false;
+
+        var resolvedPuller = pullerComp!;
+        var resolvedPullable = pullableComp!;
+
+        var pullerMap = Transform(pullerUid).MapID;
+        if (pullerMap == MapId.Nullspace ||
+            pullerMap != Transform(pullableUid).MapID)
+        {
+            return false;
+        }
+
+        var pullJointId = $"pull-joint-{GetNetEntity(pullableUid)}";
+
+        if (!_timing.ApplyingState)
+        {
+            if (resolvedPullable.PullJointId is { } oldJointId)
+            {
+                resolvedPullable.PullJointId = null;
+                RemovePullJoint(pullableUid, pullerUid, oldJointId);
+            }
+
+            RemovePullJoint(pullableUid, pullerUid, pullJointId);
+
+            if (!TryComp(pullerUid, out PhysicsComponent? pullerPhysics) ||
+                !TryComp(pullableUid, out PhysicsComponent? pullablePhysics))
+            {
+                return false;
+            }
+
+            resolvedPullable.PullJointId = pullJointId;
+            var joint = _joints.CreateDistanceJoint(pullableUid, pullerUid,
+                pullablePhysics.LocalCenter, pullerPhysics.LocalCenter,
+                id: pullJointId, minimumDistance: 1);
+            joint.CollideConnected = false;
+            joint.MaxLength = joint.Length + 0.15f;
+            joint.MinLength = 0f;
+            joint.Stiffness = 0f;
+
+            _physics.SetFixedRotation(pullableUid, resolvedPullable.FixedRotationOnPull, body: pullablePhysics);
+            EnsureComp<ActivePullerComponent>(pullerUid);
+        }
+        else
+        {
+            resolvedPullable.PullJointId = pullJointId;
+        }
+
+        Dirty(pullerUid, resolvedPuller);
+        Dirty(pullableUid, resolvedPullable);
+        return true;
+    }
+
+    private bool ResolveActivePullRelationship(EntityUid pullerUid,
+        EntityUid pullableUid,
+        ref PullerComponent? pullerComp,
+        ref PullableComponent? pullableComp)
+    {
+        return Resolve(pullerUid, ref pullerComp, false) &&
+               Resolve(pullableUid, ref pullableComp, false) &&
+               pullerComp.Pulling == pullableUid &&
+               pullableComp.Puller == pullerUid;
+    }
+
+    private void RemovePullJoint(EntityUid pullableUid, EntityUid? pullerUid, string pullJointId)
+    {
+        _joints.RemoveJoint(pullableUid, pullJointId);
+
+        if (pullerUid is { } puller && puller != pullableUid)
+            _joints.RemoveJoint(puller, pullJointId);
+
+        var query = EntityQueryEnumerator<JointComponent>();
+        while (query.MoveNext(out var uid, out var joints))
+        {
+            if (uid == pullableUid ||
+                pullerUid is { } currentPuller && uid == currentPuller ||
+                !joints.GetJoints.ContainsKey(pullJointId))
+            {
+                continue;
+            }
+
+            _joints.RemoveJoint(uid, pullJointId);
+        }
+    }
+    // CMU end
 
     public bool TryStartPull(EntityUid pullerUid, EntityUid pullableUid,
         PullerComponent? pullerComp = null, PullableComponent? pullableComp = null)

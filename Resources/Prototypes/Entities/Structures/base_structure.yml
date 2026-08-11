@@ -56,6 +56,8 @@
         - MidImpassable
         - LowImpassable
   - type: Anchorable
+  #CMU
+  - type: CMUZPhysics
 
 # For use with yaml composition, so that all wheeled structures can easily be changed.
 - type: entity

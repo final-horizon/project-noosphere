@@ -46,6 +46,8 @@
   - type: DamageExaminable
   - type: Rotatable
     increment: 30
+  #CMU
+  - type: CMUZPhysics
 
 - type: entity
   name: "storage item"

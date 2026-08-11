@@ -40,6 +40,12 @@ namespace Content.Client.Viewport
         public int CurrentRenderScale => _curRenderScale;
 
         /// <summary>
+        ///     Enables CMU multi-Z composition for this viewport.
+        /// </summary>
+        [ViewVariables(VVAccess.ReadWrite)]
+        public bool RenderZLevels { get; set; }
+
+        /// <summary>
         ///     The eye to render.
         /// </summary>
         public IEye? Eye
@@ -150,7 +156,14 @@ namespace Content.Client.Viewport
 
             DebugTools.AssertNotNull(_viewport);
 
-            _viewport!.Render();
+            if (RenderZLevels)
+                RenderZLevelPasses(_viewport!);
+            else
+            {
+                NoteZRenderBypassed("viewport RenderZLevels=false");
+                ClearZLevelCompositeState();
+                _viewport!.Render();
+            }
 
             if (_queuedScreenshots.Count != 0)
             {
@@ -171,6 +184,7 @@ namespace Content.Client.Viewport
             var drawBoxGlobal = drawBox.Translated(GlobalPixelPosition);
             _viewport.RenderScreenOverlaysBelow(handle, this, drawBoxGlobal);
             handle.DrawingHandleScreen.DrawTextureRect(_viewport.RenderTarget.Texture, drawBox);
+            DrawZLevelComposites(handle, drawBox);
             _viewport.RenderScreenOverlaysAbove(handle, this, drawBoxGlobal);
         }
 
@@ -185,7 +199,7 @@ namespace Content.Client.Viewport
             DebugTools.AssertNotNull(_viewport);
 
             var vpSize = _viewport!.Size;
-            var ourSize = (Vector2) PixelSize;
+            var ourSize = (Vector2)PixelSize;
 
             if (FixedStretchSize == null)
             {
@@ -208,13 +222,13 @@ namespace Content.Client.Viewport
                 // Size
                 var pos = (ourSize - size) / 2;
 
-                return (UIBox2i) UIBox2.FromDimensions(pos, size);
+                return (UIBox2i)UIBox2.FromDimensions(pos, size);
             }
             else
             {
                 // Center only, no scaling.
                 var pos = (ourSize - FixedStretchSize.Value) / 2;
-                return (UIBox2i) UIBox2.FromDimensions(pos, FixedStretchSize.Value);
+                return (UIBox2i)UIBox2.FromDimensions(pos, FixedStretchSize.Value);
             }
         }
 
@@ -224,16 +238,16 @@ namespace Content.Client.Viewport
 
             var vpSizeBase = ViewportSize;
             var ourSize = PixelSize;
-            var (ratioX, ratioY) = ourSize / (Vector2) vpSizeBase;
+            var (ratioX, ratioY) = ourSize / (Vector2)vpSizeBase;
             var ratio = Math.Min(ratioX, ratioY);
             var renderScale = 1;
             switch (_renderScaleMode)
             {
                 case ScalingViewportRenderScaleMode.CeilInt:
-                    renderScale = (int) Math.Ceiling(ratio);
+                    renderScale = (int)Math.Ceiling(ratio);
                     break;
                 case ScalingViewportRenderScaleMode.FloorInt:
-                    renderScale = (int) Math.Floor(ratio);
+                    renderScale = (int)Math.Floor(ratio);
                     break;
                 case ScalingViewportRenderScaleMode.Fixed:
                     renderScale = _fixedRenderScale;
@@ -253,6 +267,7 @@ namespace Content.Client.Viewport
                 });
 
             _viewport.RenderScale = new Vector2(renderScale, renderScale);
+            _viewport.ClearWhenMissingEye = true;
 
             _viewport.Eye = _eye;
         }
@@ -268,6 +283,7 @@ namespace Content.Client.Viewport
         {
             _viewport?.Dispose();
             _viewport = null;
+            DisposeZLevelViewports();
         }
 
         public MapCoordinates ScreenToMap(Vector2 coords)
@@ -280,7 +296,7 @@ namespace Content.Client.Viewport
             Matrix3x2.Invert(GetLocalToScreenMatrix(), out var matrix);
             coords = Vector2.Transform(coords, matrix);
 
-            return _viewport!.LocalToWorld(coords);
+            return ProjectViewportLocalToMap(coords);
         }
 
         /// <inheritdoc/>
@@ -297,7 +313,39 @@ namespace Content.Client.Viewport
             var ev = new PixelToMapEvent(coords, this, _viewport!);
             _entityManager.EventBus.RaiseEvent(EventSource.Local, ref ev);
 
-            return _viewport!.LocalToWorld(ev.VisiblePosition);
+            return ProjectViewportLocalToMap(ev.VisiblePosition);
+        }
+
+        private MapCoordinates ProjectViewportLocalToMap(Vector2 coords)
+        {
+            DebugTools.AssertNotNull(_viewport);
+
+            var projectionEye = GetInputProjectionEye(_eye, _viewport!.Eye);
+            return projectionEye == null
+                ? default
+                : ProjectViewportLocalToMap(coords, _viewport.Size, _viewport.RenderScale, projectionEye);
+        }
+
+        internal static IEye? GetInputProjectionEye(IEye? controlEye, IEye? renderEye)
+        {
+            return renderEye is ZEye && controlEye != null
+                ? controlEye
+                : renderEye;
+        }
+
+        internal static MapCoordinates ProjectViewportLocalToMap(
+            Vector2 point,
+            Vector2i viewportSize,
+            Vector2 renderScale,
+            IEye eye)
+        {
+            point -= viewportSize / 2f;
+            point *= new Vector2(1, -1) / EyeManager.PixelsPerMeter;
+
+            eye.GetViewMatrixInv(out var viewMatrixInv, renderScale);
+            point = Vector2.Transform(point, viewMatrixInv);
+
+            return new MapCoordinates(point, eye.Position.MapId);
         }
 
         public Vector2 WorldToScreen(Vector2 map)
@@ -325,7 +373,7 @@ namespace Content.Client.Viewport
             EnsureViewportCreated();
 
             var drawBox = GetDrawBox();
-            var scaleFactor = drawBox.Size / (Vector2) _viewport!.Size;
+            var scaleFactor = drawBox.Size / (Vector2)_viewport!.Size;
 
             if (scaleFactor.X == 0 || scaleFactor.Y == 0)
                 // Basically a nonsense scenario, at least make sure to return something that can be inverted.

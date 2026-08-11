@@ -40,6 +40,12 @@
             max: 4
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: CMUZLevelHighGround # CMU start
+    heightCurve:
+    - 1.05
+    - 1.05
+    - 0.1
+    stick: true # CMU end
 
 - type: entity
   id: StairStage

@@ -1,4 +1,4 @@
-﻿- type: tile
+- type: tile
   id: BasePlating
   abstract: true
   friction: 1.5
@@ -98,6 +98,7 @@
   itemDrop: PartRodMetal1
   heatCapacity: 10000
   mass: 200
+  transparent: true
 
 - type: tile
   id: TrainLattice
@@ -106,3 +107,4 @@
   sprite: /Textures/Tiles/latticeTrain.png
   footstepSounds:
     collection: FootstepPlating
+  transparent: true

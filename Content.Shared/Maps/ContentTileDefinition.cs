@@ -132,6 +132,12 @@ public sealed partial class ContentTileDefinition : IPrototype, IInheritingProto
     /// </summary>
     [DataField] public bool EditorHidden { get; private set; } = false;
 
+    /// <summary>
+    /// CrystallEdge: used for lightning calculation through zlevels
+    /// </summary>
+    [DataField]
+    public bool Transparent = false;
+
     public void AssignTileId(ushort id)
     {
         TileId = id;

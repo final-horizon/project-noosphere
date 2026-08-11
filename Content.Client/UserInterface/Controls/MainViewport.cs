@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Client.Viewport;
 using Content.Shared.CCVar;
 using Robust.Client.UserInterface;
@@ -25,13 +25,12 @@ namespace Content.Client.UserInterface.Controls
             Viewport = new ScalingViewport
             {
                 AlwaysRender = true,
+                RenderZLevels = true,
                 RenderScaleMode = ScalingViewportRenderScaleMode.CeilInt,
                 MouseFilter = MouseFilterMode.Stop
             };
 
             AddChild(Viewport);
-
-            _cfg.OnValueChanged(CCVars.ViewportScalingFilterMode, _ => UpdateCfg(), true);
         }
 
         protected override void EnteredTree()
@@ -54,7 +53,6 @@ namespace Content.Client.UserInterface.Controls
             var renderScaleUp = _cfg.GetCVar(CCVars.ViewportScaleRender);
             var fixedFactor = _cfg.GetCVar(CCVars.ViewportFixedScaleFactor);
             var verticalFit = _cfg.GetCVar(CCVars.ViewportVerticalFit);
-            var filterMode = _cfg.GetCVar(CCVars.ViewportScalingFilterMode);
 
             if (stretch)
             {
@@ -63,12 +61,7 @@ namespace Content.Client.UserInterface.Controls
                 {
                     // Did not find a snap, enable stretching.
                     Viewport.FixedStretchSize = null;
-                    Viewport.StretchMode = filterMode switch
-                    {
-                        "nearest" => ScalingViewportStretchMode.Nearest,
-                        "bilinear" => ScalingViewportStretchMode.Bilinear,
-                        _ => ScalingViewportStretchMode.Nearest
-                    };
+                    Viewport.StretchMode = ScalingViewportStretchMode.Bilinear;
                     Viewport.IgnoreDimension = verticalFit ? ScalingViewportIgnoreDimension.Horizontal : ScalingViewportIgnoreDimension.None;
 
                     if (renderScaleUp)
@@ -129,7 +122,7 @@ namespace Content.Client.UserInterface.Controls
             {
                 var toleranceMargin = i * cfgToleranceMargin;
                 var toleranceClip = i * cfgToleranceClip;
-                var scaled = (Vector2) Viewport.ViewportSize * i;
+                var scaled = (Vector2)Viewport.ViewportSize * i;
                 var (dx, dy) = PixelSize - scaled;
 
                 // The rule for which snap fits is that at LEAST one axis needs to be in the tolerance size wise.
