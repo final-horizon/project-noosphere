@@ -1,0 +1,38 @@
+- type: tile
+  id: NSFloorDirt1
+  name: dirt
+  sprite: /Textures/_Noosphere/Tiles/Natural/dirt1.png
+  variants: 3
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorDirt2
+  name: dirt
+  sprite: /Textures/_Noosphere/Tiles/Natural/dirt2.png
+  variants: 3
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorDirt3
+  name: dirt
+  sprite: /Textures/_Noosphere/Tiles/Natural/dirt3.png
+  variants: 8
+  placementVariants:
+  - 0.8
+  - 0.2857
+  - 0.2857
+  - 0.2857
+  - 0.2857
+  - 0.2857
+  - 0.2857
+  - 0.2857
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass

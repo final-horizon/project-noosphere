@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken from st13",
+    "states": [
+        {
+            "name": "grass_tall1"
+
+        },
+        {
+            "name": "grass_tall2"
+
+        },
+        {
+            "name": "grass_tall3"
+
+        },
+        {
+            "name": "grass_tall4"
+
+        }
+    ]
+}
