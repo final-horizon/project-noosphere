@@ -1,0 +1,17 @@
+- type: gameMap
+  id: Noosphere
+  mapName: Noosphere
+  mapPath: /Maps/Noosphere/noosphere/noosphere0.yml
+  mapsAbove:
+    - /Maps/Noosphere/noosphere/noosphere1.yml
+    - /Maps/Noosphere/noosphere/noosphere2.yml
+  minPlayers: 0
+  stations:
+    Empty:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Empty"
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ -1, -1 ]

@@ -1,0 +1,13 @@
+- type: tile
+  id: NSFloorLattice
+  parent: BasePlating
+  name: tiles-plating
+  sprite: /Textures/_Noosphere/Tiles/Floors/lattice.png
+  variants: 17
+
+- type: tile
+  id: NSFloorLatticeBar
+  parent: BasePlating
+  name: tiles-plating
+  sprite: /Textures/_Noosphere/Tiles/Floors/lattice_bar.png
+  variants: 4
