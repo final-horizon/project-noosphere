@@ -1,0 +1,23 @@
+- type: lobbyBackground
+  id: Zaton
+  background: /Textures/_Noosphere/LobbyScreens/zaton.webp
+  title: Unknown
+  artist: Unknown
+
+- type: lobbyBackground
+  id: Jupiter
+  background: /Textures/_Noosphere/LobbyScreens/jupiter.webp
+  title: Unknown
+  artist: Unknown
+
+- type: lobbyBackground
+  id: Pripyat
+  background: /Textures/_Noosphere/LobbyScreens/pripyat.webp
+  title: Unknown
+  artist: Unknown
+
+- type: lobbyBackground
+  id: Underground
+  background: /Textures/_Noosphere/LobbyScreens/underground.webp
+  title: Unknown
+  artist: Unknown
