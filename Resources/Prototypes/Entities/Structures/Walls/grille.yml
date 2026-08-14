@@ -1,3 +1,4 @@
+# NS - remove destructable
 - type: entity
   id: Grille
   parent: BaseStructure
@@ -11,21 +12,12 @@
       Brute:
         path:
           "/Audio/Weapons/grille_hit.ogg"
-  - type: RCDDeconstructable
-    cost: 6
-    delay: 4
-    fx: EffectRCDDeconstruct4
   - type: CanBuildWindowOnTop
   - type: Sprite
     drawdepth: Walls
     sprite: Structures/Walls/grille.rsi
     layers:
     - state: grille
-    - state: electrified
-      sprite: Effects/electricity.rsi
-      map: ["enum.ElectrifiedLayers.Sparks"]
-      shader: unshaded
-      visible: false
   - type: Icon
     sprite: Structures/Walls/grille.rsi
     state: grille
@@ -33,27 +25,6 @@
     graph: Grille
     node: grille
     deconstructionTarget: start
-  - type: Damageable
-    damageModifierSet: PerforatedMetallic
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: Electrified
-    requirePower: true
-    noWindowInTile: true
-    highVoltageNode: high
-    mediumVoltageNode: medium
-    lowVoltageNode: low
-  - type: NodeContainer
-    nodes:
-      high:
-        !type:CableDeviceNode
-        nodeGroupID: HVPower
-      medium:
-        !type:CableDeviceNode
-        nodeGroupID: MVPower
-      low:
-        !type:CableDeviceNode
-        nodeGroupID: Apc
   - type: Physics
     bodyType: Static
   - type: Fixtures
@@ -66,30 +37,7 @@
         - FullTileMask
         layer:
         - GlassLayer
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 200 #excess damage (nuke?). avoid computational cost of spawning entities.
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: grilleBroken
-      - !type:DoActsBehavior
-        acts: ["Breakage"]
   - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.ElectrifiedVisuals.ShowSparks:
-        enum.ElectrifiedLayers.Sparks:
-          True: { visible: True }
-          False: { visible: False }
-  - type: AnimationPlayer
 
 - type: entity
   id: ClockworkGrille
@@ -124,14 +72,6 @@
   - type: Icon
     sprite: Structures/Walls/grille.rsi
     state: grille_broken
-  - type: RCDDeconstructable
-    cost: 6
-    delay: 4
-    fx: EffectRCDDeconstruct4
-  - type: Construction
-    graph: Grille
-    node: grilleBroken
-    deconstructionTarget: start
   - type: Fixtures # overwrite BaseStructure parent.
   - type: Physics
     bodyType: Static
@@ -139,20 +79,6 @@
   - type: Tag
     tags:
     - ForceNoFixRotations
-  - type: Damageable
-    damageModifierSet: FlimsyMetallic
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 10
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: start
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
 
 - type: entity
   id: ClockworkGrilleBroken
@@ -181,13 +107,7 @@
   - type: Sprite
     drawdepth: Walls
     sprite: Structures/Walls/grille.rsi
-    layers:
-    - state: grille_diagonal
-    - state: electrified_diagonal
-      sprite: Effects/electricity.rsi
-      map: ["enum.ElectrifiedLayers.Sparks"]
-      shader: unshaded
-      visible: false
+    state: grille_diagonal
   - type: Icon
     sprite: Structures/Walls/grille.rsi
     state: grille_diagonal
@@ -221,13 +141,7 @@
   - type: Sprite
     drawdepth: Walls
     sprite: Structures/Walls/clockwork_grille.rsi
-    layers:
-    - state: ratvargrille_diagonal
-    - state: electrified_diagonal
-      sprite: Effects/electricity.rsi
-      map: ["enum.ElectrifiedLayers.Sparks"]
-      shader: unshaded
-      visible: false
+    state: ratvargrille_diagonal
   - type: Icon
     sprite: Structures/Walls/clockwork_grille.rsi
     state: ratvargrille_diagonal

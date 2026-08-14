@@ -1,3 +1,4 @@
+# NS - remove damageable
 - type: entity
   parent: BaseStructure
   id: BaseFenceWood
@@ -20,30 +21,6 @@
     bodyType: Static
   - type: Transform
     anchored: true
-  - type: Damageable
-    damageModifierSet: Wood
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: RCDDeconstructable
-    cost: 2
-    delay: 2
-    fx: EffectRCDDeconstruct2
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 125
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank:
-            min: 1
-            max: 2
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: Climbable
     delay: 5.0
   - type: Appearance
@@ -55,22 +32,6 @@
   description: Wooden piece of small fence. The best protection for the fencing of a private territory!
   abstract: true
   components:
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 75
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: Climbable
     delay: 2.5
   - type: RequireProjectileTarget

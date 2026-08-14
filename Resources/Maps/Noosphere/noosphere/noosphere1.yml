@@ -85,7 +85,7 @@ entities:
         version: 2
         nodes: []
     - type: MapLight
-      ambientLightColor: '#D8B059FF'
+      ambientLightColor: '#f9ead6ff'
     - type: LightCycle
     - type: SunShadow
     - type: SunShadowCycle

@@ -3,6 +3,7 @@
 # Anyway
 # See WallRock variants for the remappings.
 
+# NS - remove destructable from all damageable walls and other things
 #Asteroid rock
 - type: entity
   id: AsteroidRock
@@ -31,24 +32,6 @@
       state: rock_asteroid_north
     - map: [ "enum.EdgeLayer.West" ]
       state: rock_asteroid_west
-  - type: MiningScannerViewable
-  - type: Damageable
-    damageModifierSet: Rock
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 120
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          path: /Audio/Effects/break_stone.ogg
-          params:
-            volume: -6
   - type: Fixtures
     fixtures:
       fix1:
@@ -805,30 +788,12 @@
   components:
   - type: Transform
     noRot: true
-  - type: SoundOnGather
-  - type: Gatherable
-    toolWhitelist:
-      tags:
-      - Pickaxe
-  - type: Damageable
-    damageModifierSet: Metallic
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: IconSmooth
     key: walls
     mode: NoSprite
   - type: Icon
     sprite: Structures/Walls/rock.rsi
     state: rock
-  - type: MiningScannerViewable
   - type: SmoothEdge
   - type: Sprite
     sprite: Structures/Walls/rock.rsi

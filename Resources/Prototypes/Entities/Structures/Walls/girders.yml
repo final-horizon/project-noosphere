@@ -1,3 +1,4 @@
+# NS remove destructable
 - type: entity
   id: Girder
   parent: BaseStructureDynamic
@@ -27,26 +28,6 @@
   - type: Sprite
     sprite: Structures/Walls/solid.rsi
     state: wall_girder
-  - type: Damageable
-    damageModifierSet: StructuralMetallic
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
   - type: StaticPrice
     price: 30
 
@@ -62,25 +43,6 @@
   - type: Construction
     graph: Girder
     node: reinforcedGirder
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 1
-            max: 1
-          SheetPlasteel1:
-            min: 1
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
   - type: StaticPrice
     price: 130
 
@@ -98,22 +60,3 @@
     node: clockGirder
   - type: StaticPrice
     price: 75
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetBrass1:
-            min: 1
-            max: 2
-          PartRodMetal1:
-            min: 1
-            max: 2
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak

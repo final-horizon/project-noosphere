@@ -1,3 +1,4 @@
+# NS remove damageable
 - type: entity
   parent: BaseStructure
   id: BaseRailing
@@ -13,18 +14,9 @@
   - type: Physics
     bodyType: Static
   - type: InteractionOutline
-  - type: Repairable
-  - type: Damageable
-    damageModifierSet: FlimsyMetallic
-  - type: Injurable
-    damageContainer: StructuralInorganic
   - type: Climbable
   - type: Construction
     graph: Railing
-  - type: RCDDeconstructable
-    cost: 2
-    delay: 2
-    fx: EffectRCDDeconstruct2
 
 - type: entity
   parent: BaseRailing
@@ -45,24 +37,6 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 20
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          PartRodMetal1:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: Construction
     node: railing
 
@@ -94,24 +68,6 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 20
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          PartRodMetal1:
-            min: 0
-            max: 2
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: Construction
     node: railingCorner
 
@@ -134,24 +90,6 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 20
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          PartRodMetal1:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: Construction
     node: railingCornerSmall
 
@@ -192,23 +130,5 @@
           - TableMask
         layer:
           - TableLayer
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 20
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-          params:
-            volume: -6
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          PartRodMetal1:
-            min: 0
-            max: 2
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: Construction
     node: railingRound
