@@ -1,5 +1,5 @@
 - type: entity
-  name: VAL
+  name: VSS VAL
   parent: NSBaseWeaponRifle
   id: NSWeaponRifleVal
   description: placeholder

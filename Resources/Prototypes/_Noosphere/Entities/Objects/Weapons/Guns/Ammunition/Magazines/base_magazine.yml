@@ -1,5 +1,5 @@
 - type: entity
-  id: NSBaseMagazineRifle
+  id: NSBaseMagazine
   name: "magazine"
   parent: BaseItem
   abstract: true
@@ -12,6 +12,19 @@
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
+
+
+# Rifles
+
+- type: entity
+  id: NSBaseMagazineRifle
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 30
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x39/30.rsi
     layers:
@@ -24,6 +37,7 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
+
 
 
 - type: entity
@@ -59,7 +73,7 @@
       tags:
         - NSCartridgeRifle762x51
   - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/30.rsi
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x51/30.rsi
 
 - type: entity
   id: NSBaseMagazineRifle545x39
@@ -96,3 +110,64 @@
         - NSCartridgeRifle556x45
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/30.rsi
+
+
+
+# Sniper
+
+- type: entity
+  id: NSBaseMagazineSniper
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 20
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/3x39/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+
+- type: entity
+  id: NSBaseMagazineSniper762x54
+  name: "7.62x54 magazine"
+  parent: NSBaseMagazineSniper
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSniper762x54
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeSniper762x54
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/762x54/10.rsi
+
+- type: entity
+  id: NSBaseMagazineSniper3x39
+  name: "3x39 magazine"
+  parent: NSBaseMagazineSniper
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSniper3x39
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeSniper3x39
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/3x39/20.rsi

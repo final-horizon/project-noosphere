@@ -1,0 +1,22 @@
+- type: entity
+  parent: BaseBullet
+  id: NSBulletSniper3x39AP
+  categories: [ HideSpawnMenu ]
+  name: bullet (3x39 AP)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 87
+
+- type: entity
+  parent: BaseBullet
+  id: NSBulletSniper3x39HP
+  categories: [ HideSpawnMenu ]
+  name: bullet (3x39 HP)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 60
+        Piercing: 30

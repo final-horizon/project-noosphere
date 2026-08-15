@@ -13,10 +13,16 @@
 - type: Tag
   id: NSMagazineRifle762x51
 
+## Snipers
+- type: Tag
+  id: NSMagazineSniper762x54
+
+- type: Tag
+  id: NSMagazineSniper3x39
+
 # Cartridges
 
 ## Shells
-
 - type: Tag
   id: NSShellShotgun
 
@@ -35,3 +41,14 @@
 
 - type: Tag
   id: NSCartridgeRifle762x51
+
+## Snipers
+
+- type: Tag
+  id: NSCartridgeSniper
+
+- type: Tag
+  id: NSCartridgeSniper762x54
+
+- type: Tag
+  id: NSCartridgeSniper3x39

@@ -1,0 +1,33 @@
+- type: entity
+  id: NSMagazineSniper3x39AP20
+  name: "3x39 Magazine 20x"
+  parent: NSBaseMagazineSniper3x39
+  description: 20-round double stack magazine for the VSS Vintorez.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 20
+    proto: NSCartridgeSniper3x39AP
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/3x39/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NSMagazineSniper3x3920Empty
+  name: "3x39 Magazine 20x"
+  suffix: empty
+  parent: NSBaseMagazineSniper3x39
+  description: 10-round double stack magazine for sniper rifles.
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/3x39/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

@@ -1,0 +1,44 @@
+- type: entity
+  abstract: true
+  parent: NSBaseCartridgeSniper
+  id: NSBaseCartridgeSniper3x39
+  name: cartridge (3x39)
+  components:
+  - type: Tag
+    tags:
+      - NSCartridgeSniper3x39
+      - NSCartridgeSniper
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  parent: NSBaseCartridgeSniper3x39
+  id: NSCartridgeSniper3x39AP
+  name: cartridge (3x39 AP)
+  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletSniper3x39AP
+
+
+- type: entity
+  parent: NSBaseCartridgeSniper3x39
+  id: NSCartridgeSniper3x39HP
+  name: cartridge (3x39 HP)
+  description: A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletSniper3x39HP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"

@@ -19,7 +19,6 @@
     whitelist:
       tags:
         - NSCartridgeRifle
-        - NSShellShotgun
     proto: null
     capacity: 30
   - type: Item
@@ -52,3 +51,25 @@
       steps: 2
       zeroVisible: false
     - type: Appearance
+
+- type: entity
+  abstract: true
+  parent: NSBaseAmmoProvider
+  id: NSBaseBoxSniper
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeSniper
+    proto: null
+    capacity: 30
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Rifle/3x39_box.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: false
+  - type: Appearance

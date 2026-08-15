@@ -9,6 +9,7 @@
   - type: Gun
     selectedMode: SemiAuto
     availableModes:
+      - FullAuto
       - SemiAuto
   - type: ItemSlots
     slots:
