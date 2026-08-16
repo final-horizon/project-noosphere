@@ -1,0 +1,21 @@
+- type: entity
+  parent: NSBaseBoxLowCaliber
+  id: NSBox9x18Tier1
+  name: Box of 9x18 T1 (30)
+  description: Ammo box containing 9x18 T1
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeLowCaliber9x18Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Low_Caliber/9x18.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

@@ -1,0 +1,29 @@
+
+
+- type: entity
+  parent: NSBaseCartridgeLowCaliber
+  id: NSCartridgeLowCaliber9x19
+  name: NS cartridge (9x19)
+  description: Placeholder 
+  components:
+  - type: Tag
+    tags:
+      - NSCartridgeLowCaliber9x19
+      - NSCartridgeLowCaliber
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  parent: NSCartridgeLowCaliber9x19
+  id: NSCartridgeLowCaliber9x19Tier1
+  name: cartridge (9x19 T1)
+  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletLowCaliber9x19Tier1

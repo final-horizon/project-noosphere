@@ -16,21 +16,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolHighCapacity
+        startingItem: NSMagazinePistol9x18Tier1
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/pm_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_pm_open.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
-            - MagazinePistolHighCapacity
+            - NSMagazinePistol9x18
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - NSCartridgeLowCaliber9x18
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

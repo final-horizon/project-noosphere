@@ -171,3 +171,63 @@
         - NSCartridgeSniper3x39
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/3x39/20.rsi
+
+
+
+# Pistols
+
+- type: entity
+  id: NSBaseMagazinePistol
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 7
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x19.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: NSBaseMagazinePistol9x19
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol9x19
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber9x19
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x19.rsi
+
+- type: entity
+  id: NSBaseMagazinePistol9x18
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol9x18
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber9x18
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x18.rsi

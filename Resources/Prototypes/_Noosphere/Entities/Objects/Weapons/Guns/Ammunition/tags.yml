@@ -20,6 +20,14 @@
 - type: Tag
   id: NSMagazineSniper3x39
 
+## Pistols
+
+- type: Tag
+  id: NSMagazinePistol9x19
+
+- type: Tag
+  id: NSMagazinePistol9x18
+
 # Cartridges
 
 ## Shells
@@ -52,3 +60,14 @@
 
 - type: Tag
   id: NSCartridgeSniper3x39
+
+## Low Caliber (i.e smgs, pistols)
+- type: Tag
+  id: NSCartridgeLowCaliber
+
+- type: Tag
+  id: NSCartridgeLowCaliber9x19
+
+- type: Tag
+  id: NSCartridgeLowCaliber9x18
+

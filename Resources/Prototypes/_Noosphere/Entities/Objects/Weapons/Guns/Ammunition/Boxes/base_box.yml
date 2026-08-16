@@ -73,3 +73,25 @@
     steps: 1
     zeroVisible: false
   - type: Appearance
+
+- type: entity
+  abstract: true
+  parent: NSBaseAmmoProvider
+  id: NSBaseBoxLowCaliber
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber
+    proto: null
+    capacity: 30
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Low_Caliber/9x19.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: false
+  - type: Appearance

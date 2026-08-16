@@ -100,3 +100,26 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
+
+
+- type: entity
+  id: NSBaseCartridgeLowCaliber
+  name: NS cartridge (Low Caliber)
+  parent: NSBaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSCartridgeLowCaliber
+  - type: CartridgeAmmo
+    proto: BulletPistol
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+
+
