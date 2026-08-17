@@ -25,19 +25,6 @@
   - type: BallisticAmmoProvider
     mayTransfer: true
     capacity: 30
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x39/30.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
 
 
 - type: entity
@@ -54,9 +41,6 @@
     whitelist:
       tags:
         - NSCartridgeRifle762x39
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x39/30.rsi
-
 
 - type: entity
   id: NSBaseMagazineRifle762x51
@@ -72,8 +56,6 @@
     whitelist:
       tags:
         - NSCartridgeRifle762x51
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x51/30.rsi
 
 - type: entity
   id: NSBaseMagazineRifle545x39
@@ -89,9 +71,6 @@
     whitelist:
       tags:
         - NSCartridgeRifle545x39
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/545x39/30.rsi
-
 
 
 - type: entity
@@ -108,9 +87,6 @@
     whitelist:
       tags:
         - NSCartridgeRifle556x45
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/30.rsi
-
 
 
 # Sniper
@@ -124,19 +100,6 @@
   - type: BallisticAmmoProvider
     mayTransfer: true
     capacity: 20
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/3x39/20.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
-
 
 - type: entity
   id: NSBaseMagazineSniper762x54
@@ -152,8 +115,6 @@
     whitelist:
       tags:
         - NSCartridgeSniper762x54
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/762x54/10.rsi
 
 - type: entity
   id: NSBaseMagazineSniper3x39
@@ -169,9 +130,6 @@
     whitelist:
       tags:
         - NSCartridgeSniper3x39
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Snipers/3x39/20.rsi
-
 
 
 # Pistols
@@ -185,18 +143,6 @@
   - type: BallisticAmmoProvider
     mayTransfer: true
     capacity: 7
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x19.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: false
-  - type: Appearance
 
 - type: entity
   id: NSBaseMagazinePistol9x19
@@ -212,8 +158,6 @@
     whitelist:
       tags:
         - NSCartridgeLowCaliber9x19
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x19.rsi
 
 - type: entity
   id: NSBaseMagazinePistol9x18
@@ -229,5 +173,76 @@
     whitelist:
       tags:
         - NSCartridgeLowCaliber9x18
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x18.rsi
+
+- type: entity
+  id: NSBaseMagazinePistol45
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol45
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber45
+
+- type: entity
+  id: NSBaseMagazinePistol57x28
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol57x28
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber57x28
+
+- type: entity
+  id: NSBaseMagazinePistol762x25
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol762x25
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber762x25
+
+# SMGs
+
+
+- type: entity
+  id: NSBaseMagazineSMG
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 30
+
+- type: entity
+  id: NSBaseMagazineSMG762x25
+  name: "placeholder"
+  parent: NSBaseMagazineSMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMG762x25
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber762x25

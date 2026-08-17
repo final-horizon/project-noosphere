@@ -32,20 +32,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSubMachineGun
+        startingItem: NSMagazineSMGPPSh70Tier1
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/berettam38_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_berettam38_open.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolSubMachineGun
+            - NSMagazineSMGPPSh
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - NSCartridgeLowCaliber762x25
   - type: MagazineVisuals
     magState: mag
     steps: 1

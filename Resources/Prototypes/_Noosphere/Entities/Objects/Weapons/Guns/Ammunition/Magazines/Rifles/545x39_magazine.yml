@@ -16,7 +16,7 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: NSMagazineRifle545x3930Empty
+  id: NSMagazineRifle545x3930
   name: "5.45x39 Magazine 30x"
   parent: NSBaseMagazineRifle545x39
   description: 30-round double stack magazine for combat rifles.
@@ -33,7 +33,7 @@
 
 
 - type: entity
-  id: NSMagazineRifle545x3920Empty
+  id: NSMagazineRifle545x3920
   name: "5.45x39 Magazine 20x"
   parent: NSBaseMagazineRifle545x39
   description: 20-round double stack magazine for combat rifles.
@@ -50,7 +50,7 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: NSMagazineRifle545x3910Empty
+  id: NSMagazineRifle545x3910
   name: "5.45x39 Magazine 10x"
   parent: NSBaseMagazineRifle545x39
   description: 10-round double stack magazine for combat rifles.

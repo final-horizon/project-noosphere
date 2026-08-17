@@ -1,0 +1,44 @@
+- type: entity
+  id: NSMagazinePistol45Tier1
+  name: ".45 Magazine 8x"
+  parent: NSBaseMagazinePistol45
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 8
+    proto: NSCartridgeLowCaliber45Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: NSMagazinePistol45
+  name: ".45 Magazine 8x"
+  parent: NSBaseMagazinePistol45
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 8
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+

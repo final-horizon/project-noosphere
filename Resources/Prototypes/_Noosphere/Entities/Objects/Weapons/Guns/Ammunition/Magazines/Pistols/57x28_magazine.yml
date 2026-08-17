@@ -1,0 +1,44 @@
+- type: entity
+  id: NSMagazinePistol57x28Tier1
+  name: "5.7x28mm Magazine 20x"
+  parent: NSBaseMagazinePistol57x28
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 20
+    proto: NSCartridgeLowCaliber57x28Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/57x28.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: NSMagazinePistol57x28
+  name: "5.7x28mm Magazine 20x"
+  parent: NSBaseMagazinePistol57x28
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 20
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/57x28.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+

@@ -1,0 +1,43 @@
+- type: entity
+  parent: NSBaseBoxLowCaliber
+  id: NSBox762x25Tier1
+  name: Box of 7.62x25mm T1 (30)
+  description: Ammo box containing 5.7x28mm T1
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeLowCaliber762x25Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Low_Caliber/762x25.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: NSBaseBoxLowCaliber
+  id: NSBox762x25Tier2
+  name: Box of 7.62x25mm T2 (30)
+  description: Ammo box containing 7.62x25mm T2
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeLowCaliber762x25Tier2
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Low_Caliber/762x25.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t2
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

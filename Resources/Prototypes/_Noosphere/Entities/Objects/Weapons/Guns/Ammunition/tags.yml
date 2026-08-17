@@ -28,6 +28,28 @@
 - type: Tag
   id: NSMagazinePistol9x18
 
+- type: Tag
+  id: NSMagazinePistol45
+
+- type: Tag
+  id: NSMagazinePistol57x28
+
+- type: Tag
+  id: NSMagazinePistol762x25
+
+## SMGs
+
+- type: Tag
+  id: NSMagazineSMG
+
+- type: Tag
+  id: NSMagazineSMG762x25
+
+- type: Tag
+  id: NSMagazineSMGPPSh
+
+
+
 # Cartridges
 
 ## Shells
@@ -71,3 +93,11 @@
 - type: Tag
   id: NSCartridgeLowCaliber9x18
 
+- type: Tag
+  id: NSCartridgeLowCaliber45
+
+- type: Tag
+  id: NSCartridgeLowCaliber57x28
+
+- type: Tag
+  id: NSCartridgeLowCaliber762x25

@@ -1,0 +1,69 @@
+- type: entity
+  id: NSMagazineSMGPPSh43
+  name: "PPSh x43 magazine"
+  parent: NSBaseMagazineSMG762x25
+  description: Placeholder
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMGPPSh
+  - type: BallisticAmmoProvider
+    capacity: 43
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/SMGs/ppsh/43.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: NSMagazineSMGPPSh43Tier1
+  name: "PPSh x43 magazine"
+  parent: NSMagazineSMGPPSh43
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeLowCaliber762x25Tier1
+
+
+- type: entity
+  id: NSMagazineSMGPPSh70
+  name: "PPSh x70 magazine"
+  parent: NSBaseMagazineSMG762x25
+  description: Placeholder
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMGPPSh
+  - type: BallisticAmmoProvider
+    capacity: 70
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/SMGs/ppsh/70.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: NSMagazineSMGPPSh70Tier1
+  name: "PPSh x70 magazine"
+  parent: NSMagazineSMGPPSh70
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 70
+    proto: NSCartridgeLowCaliber762x25Tier1

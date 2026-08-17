@@ -16,7 +16,7 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  id: NSMagazineSniper762x5410Empty
+  id: NSMagazineSniper762x5410
   name: "762x54 Magazine 10x"
   suffix: empty
   parent: NSBaseMagazineSniper762x54

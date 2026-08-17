@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Pistols/luger.rsi
   - type: Gun
-    selectedMode: SemiAuto # Override of BaseWeaponPistol to default to full-auto
+    selectedMode: SemiAuto
   - type: ItemSlots
     slots:
       gun_magazine:
