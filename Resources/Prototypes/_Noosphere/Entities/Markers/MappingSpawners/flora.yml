@@ -1,0 +1,19 @@
+- type: entity
+  id: NSRandomMappingFloraTree
+  name: random tree mapping spawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Decoration/Flora/flora_trees.rsi
+        state: tree01
+  - type: MappingSpawner
+    table: !type:GroupSelector
+        weight: 30
+        prob: 0.30
+        children:
+        - id: FloraTreeLarge
+        - id: FloraTreeConifer
+        - id: FloraTree
+        - id: DecalSpawnerGrassyRock
