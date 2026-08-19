@@ -219,8 +219,22 @@
       tags:
         - NSCartridgeLowCaliber762x25
 
-# SMGs
+- type: entity
+  id: NSBaseMagazinePistol763x25
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol763x25
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber763x25
 
+# SMGs
 
 - type: entity
   id: NSBaseMagazineSMG
@@ -246,3 +260,33 @@
     whitelist:
       tags:
         - NSCartridgeLowCaliber762x25
+
+- type: entity
+  id: NSBaseMagazineSMG9x19
+  name: "placeholder"
+  parent: NSBaseMagazineSMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMG9x19
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber9x19
+
+- type: entity
+  id: NSBaseMagazineSMG45
+  name: "placeholder"
+  parent: NSBaseMagazineSMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMG45
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber45

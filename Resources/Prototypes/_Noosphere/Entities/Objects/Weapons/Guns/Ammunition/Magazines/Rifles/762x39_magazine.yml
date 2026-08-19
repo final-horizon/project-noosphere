@@ -1,6 +1,6 @@
 - type: entity
-  id: NSMagazineRifle762x3930FMJ
-  name: "762x39 Magazine 30x"
+  id: NSMagazineRifle762x3930
+  name: "7.62x39 Magazine 30x"
   parent: NSBaseMagazineRifle762x39
   description: 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
   components:
@@ -14,27 +14,16 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
 
-- type: entity
-  id: NSMagazineRifle762x3930
-  name: "762x39 Magazine 30x"
-  suffix: empty
-  parent: NSBaseMagazineRifle762x39
-  description: 30-round double stack magazine for combat rifles.
-  components:
-  - type: BallisticAmmoProvider
-    proto: null
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/762x39/30.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: NSMagazineRifle762x3945
-  name: "762x39 Magazine 45x"
+  name: "7.62x39 Magazine 45x"
   parent: NSBaseMagazineRifle762x39
   description: 45-round double stack magazine for combat rifles.
   components:
@@ -48,12 +37,16 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
 
 
 - type: entity
   id: NSMagazineRifle762x3920
-  name: "762x39 Magazine 20x"
+  name: "7.62x39 Magazine 20x"
   parent: NSBaseMagazineRifle762x39
   description: 20-round double stack magazine for combat rifles.
   components:
@@ -67,10 +60,16 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
 
 - type: entity
   id: NSMagazineRifle762x3910
-  name: "762x39 Magazine 10x"
+  name: "7.62x39 Magazine 10x"
   parent: NSBaseMagazineRifle762x39
   description: 10-round double stack magazine for combat rifles.
   components:
@@ -84,4 +83,10 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
 

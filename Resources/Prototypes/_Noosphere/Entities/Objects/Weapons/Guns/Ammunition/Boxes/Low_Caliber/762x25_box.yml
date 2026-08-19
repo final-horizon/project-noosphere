@@ -2,7 +2,7 @@
   parent: NSBaseBoxLowCaliber
   id: NSBox762x25Tier1
   name: Box of 7.62x25mm T1 (30)
-  description: Ammo box containing 5.7x28mm T1
+  description: Ammo box containing 7.62x25mm T1
   components:
   - type: BallisticAmmoProvider
     proto: NSCartridgeLowCaliber762x25Tier1

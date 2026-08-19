@@ -28,7 +28,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: NSMagazineSniper3x39AP20
+        startingItem: NSMagazineSniper3x3920
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/val_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_val_open.ogg
         priority: 2

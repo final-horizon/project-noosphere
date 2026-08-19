@@ -1,5 +1,5 @@
 - type: entity
-  id: NSMagazineRifle545x3930FMJ
+  id: NSMagazineRifle545x3930
   name: "5.45x39 Magazine 30x"
   parent: NSBaseMagazineRifle545x39
   description: 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
@@ -14,22 +14,11 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: NSMagazineRifle545x3930
-  name: "5.45x39 Magazine 30x"
-  parent: NSBaseMagazineRifle545x39
-  description: 30-round double stack magazine for combat rifles.
-  components:
-  - type: BallisticAmmoProvider
-    proto: null
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/545x39/30.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
 
 
 - type: entity
@@ -48,6 +37,11 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
 
 - type: entity
   id: NSMagazineRifle545x3910
@@ -65,3 +59,8 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

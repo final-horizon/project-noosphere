@@ -29,7 +29,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: NSMagazineRifle545x3930
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/ak74_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_ak74_open.ogg
         priority: 2

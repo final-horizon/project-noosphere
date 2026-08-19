@@ -1,0 +1,35 @@
+- type: entity
+  id: NSMagazinePistol763x25
+  name: "7.63x25 Magazine 10x"
+  parent: NSBaseMagazinePistol763x25
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: null
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/763x25/mauser/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: NSMagazinePistol763x25Mauser
+  name: "Mauser Magazine 10x"
+  parent: NSMagazinePistol763x25
+  description: Placeholder
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistolMauser
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: NSCartridgeLowCaliber763x25Tier1
+

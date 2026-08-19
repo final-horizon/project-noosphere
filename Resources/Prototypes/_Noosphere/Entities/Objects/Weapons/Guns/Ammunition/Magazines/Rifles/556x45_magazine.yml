@@ -1,5 +1,5 @@
 - type: entity
-  id: NSMagazineRifle556x4530FMJ
+  id: NSMagazineRifle556x4530
   name: "5.56x45 Magazine 30x"
   parent: NSBaseMagazineRifle556x45
   description: 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
@@ -14,22 +14,11 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: NSMagazineRifle556x4530
-  name: "5.45x39 Magazine 30x"
-  parent: NSBaseMagazineRifle556x45
-  description: 30-round double stack magazine for combat rifles.
-  components:
-  - type: BallisticAmmoProvider
-    proto: null
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/30.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
 
 - type: entity
   id: NSMagazineRifle556x4520
@@ -39,7 +28,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 20
-    proto: null
+    proto: NSCartridgeRifle556x45FMJ
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/20.rsi
     layers:
@@ -47,17 +36,11 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  id: NSMagazineRifle556x4520FMJ
-  name: "5.56x45 Magazine 20x"
-  parent: NSMagazineRifle556x4520
-  description: 20-round double stack magazine for combat rifles.
-  components:
-  - type: BallisticAmmoProvider
-    proto: NSCartridgeRifle556x45FMJ
-  - type: Sprite
-    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/20.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
 
 - type: entity
   id: NSMagazineRifle556x4510
@@ -67,7 +50,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 10
-    proto: null
+    proto: NSCartridgeRifle556x45FMJ
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/556x45/10.rsi
     layers:
@@ -75,3 +58,9 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+

@@ -28,7 +28,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: NSMagazineRifle556x4530FMJ
+        startingItem: NSMagazineRifle556x4530
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/tpc301_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_tpc301_open.ogg
         priority: 2

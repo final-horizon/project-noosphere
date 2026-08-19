@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 17
 
 - type: entity
   parent: BaseBullet
@@ -18,4 +18,4 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 20

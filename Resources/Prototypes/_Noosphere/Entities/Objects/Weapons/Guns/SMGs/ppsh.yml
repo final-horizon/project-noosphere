@@ -32,7 +32,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: NSMagazineSMGPPSh70Tier1
+        startingItem: NSMagazineSMGPPSh70
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/berettam38_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_berettam38_open.ogg
         priority: 2

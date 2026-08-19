@@ -15,7 +15,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: NSMagazinePistol9x18Tier1
+        startingItem: NSMagazinePistol9x18
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2

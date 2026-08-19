@@ -28,7 +28,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: NSMagazineRifle545x3930FMJ
+        startingItem: NSMagazineRifle545x3930
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/abakan_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_abakan_open.ogg
         priority: 2

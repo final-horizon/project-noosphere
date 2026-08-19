@@ -26,6 +26,9 @@
   id: NSMagazinePistol9x19
 
 - type: Tag
+  id: NSMagazinePistolGlock
+
+- type: Tag
   id: NSMagazinePistol9x18
 
 - type: Tag
@@ -36,6 +39,12 @@
 
 - type: Tag
   id: NSMagazinePistol762x25
+
+- type: Tag
+  id: NSMagazinePistol763x25
+
+- type: Tag
+  id: NSMagazinePistolMauser
 
 ## SMGs
 
@@ -48,7 +57,11 @@
 - type: Tag
   id: NSMagazineSMGPPSh
 
+- type: Tag
+  id: NSMagazineSMG9x19
 
+- type: Tag
+  id: NSMagazineSMG45
 
 # Cartridges
 
@@ -101,3 +114,6 @@
 
 - type: Tag
   id: NSCartridgeLowCaliber762x25
+
+- type: Tag
+  id: NSCartridgeLowCaliber763x25

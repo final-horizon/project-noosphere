@@ -31,7 +31,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: NSMagazineRifle556x4520FMJ
+        startingItem: NSMagazineRifle556x4520
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/groza_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_groza_open.ogg
         priority: 2

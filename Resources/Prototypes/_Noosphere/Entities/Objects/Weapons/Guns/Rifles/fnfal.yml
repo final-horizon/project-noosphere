@@ -25,7 +25,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: NSMagazineRifle762x5120M885
+        startingItem: NSMagazineRifle762x5120
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/fnf2000s_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/fnf2000s_open.ogg
         priority: 2
