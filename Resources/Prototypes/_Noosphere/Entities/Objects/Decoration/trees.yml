@@ -1,0 +1,191 @@
+- type: entity
+  id: NSBaseTree
+  description: Yep, it's a tree.
+  abstract: true
+  components:
+  - type: SpriteFade
+  - type: Clickable
+  - type: Sprite
+    noRot: true
+    sprite: Objects/Decoration/Flora/flora_trees.rsi
+    drawdepth: Overdoors
+    offset: 0,0.9
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.4,0.35,0.4"
+        density: 1000
+        layer:
+        - WallLayer
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree1
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree1
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree2
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree2
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree3
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree3
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree4
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree4
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree5
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree5
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree6
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree6
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree7
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree7
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree8
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree8
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree9
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree9
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree10
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree10
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree11
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree11
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree12
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree12
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree13
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree13
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree14
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree14
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree15
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree15
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree16
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree16
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree17
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree17
+
+- type: entity
+  parent: NSBaseTree
+  id: NSTree18
+  name: tree
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Decoration/trees.rsi
+    state: tree18

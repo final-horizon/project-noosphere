@@ -1,0 +1,55 @@
+- type: entity
+  parent: DecalSpawnerFloraBase
+  id: NSDecalSpawnerGrassTall
+  suffix: NS Grass Tall
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: decal
+    - sprite: _Noosphere/Decals/grass.rsi
+      state: grass_tall3
+  - type: RandomDecalSpawner
+    decals:
+    - NSGrassTall1
+    - NSGrassTall2
+    - NSGrassTall3
+    - NSGrassTall4
+
+- type: entity
+  parent: DecalSpawnerFloraBase
+  id: NSDecalSpawnerRoot
+  suffix: NS Root
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: decal
+    - sprite: _Noosphere/Decals/root.rsi
+      state: root6
+  - type: RandomDecalSpawner
+    decals:
+    - NSRoot1
+    - NSRoot2
+    - NSRoot3
+    - NSRoot4
+    - NSRoot5
+    - NSRoot6
+
+- type: entity
+  parent: DecalSpawnerFloraBase
+  id: NSDecalSpawnerBranch
+  suffix: NS Branch
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: decal
+    - sprite: _Noosphere/Decals/branch.rsi
+      state: branch1
+  - type: RandomDecalSpawner
+    decals:
+    - NSBranch1
+    - NSBranch2
+    - NSBranch3
+    - NSBranch4
