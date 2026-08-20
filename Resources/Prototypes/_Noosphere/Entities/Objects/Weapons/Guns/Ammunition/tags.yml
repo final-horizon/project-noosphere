@@ -63,6 +63,14 @@
 - type: Tag
   id: NSMagazineSMG45
 
+## LMGs
+
+- type: Tag
+  id: NSMagazineLMG
+
+- type: Tag
+  id: NSMagazineLMGPKM
+
 # Cartridges
 
 ## Shells

@@ -290,3 +290,30 @@
     whitelist:
       tags:
         - NSCartridgeLowCaliber45
+
+# LMGs
+
+- type: entity
+  id: NSBaseMagazineLMG
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 250
+
+- type: entity
+  id: NSBaseMagazineLMGPKM
+  name: "placeholder"
+  parent: NSBaseMagazineLMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineLMGPKM
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeSniper762x54
