@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Server.GameTicking;
-using Content.Server.Station.Components;
+using Content.Shared.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared._CMU14.ZLevels.Core;
 using Content.Shared._CMU14.ZLevels.Core.EntitySystems;
