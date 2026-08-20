@@ -1,6 +1,6 @@
 - type: tile
   id: NSFloorDirt1
-  name: dirt
+  name: dirt1
   sprite: /Textures/_Noosphere/Tiles/Natural/dirt1.png
   variants: 3
   indestructible: true
@@ -10,7 +10,7 @@
 
 - type: tile
   id: NSFloorDirt2
-  name: dirt
+  name: dirt2
   sprite: /Textures/_Noosphere/Tiles/Natural/dirt2.png
   variants: 3
   indestructible: true
@@ -20,7 +20,7 @@
 
 - type: tile
   id: NSFloorDirt3
-  name: dirt
+  name: dirt3
   sprite: /Textures/_Noosphere/Tiles/Natural/dirt3.png
   variants: 8
   placementVariants:
@@ -32,6 +32,86 @@
   - 0.2857
   - 0.2857
   - 0.2857
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorDirt4
+  name: dirt4
+  sprite: /Textures/_Noosphere/Tiles/Natural/dirt4.png
+  variants: 3
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorDirt5
+  name: dirt5
+  sprite: /Textures/_Noosphere/Tiles/Natural/dirt5.png
+  variants: 3
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorDirt6
+  name: dirt6
+  sprite: /Textures/_Noosphere/Tiles/Natural/dirt6.png
+  variants: 3
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorGrass1
+  name: grass1
+  sprite: /Textures/_Noosphere/Tiles/Natural/grass1.png
+  variants: 3
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorGrass2
+  name: grass2
+  sprite: /Textures/_Noosphere/Tiles/Natural/grass2.png
+  variants: 3
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorStone1
+  name: stone1
+  sprite: /Textures/_Noosphere/Tiles/Natural/stone1.png
+  variants: 2
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorRoad1
+  name: road1
+  sprite: /Textures/_Noosphere/Tiles/Natural/road1.png
+  variants: 2
+  indestructible: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: NSFloorRoad2
+  name: road2
+  sprite: /Textures/_Noosphere/Tiles/Natural/road2.png
+  variants: 6
   indestructible: true
   isSubfloor: true
   footstepSounds:
