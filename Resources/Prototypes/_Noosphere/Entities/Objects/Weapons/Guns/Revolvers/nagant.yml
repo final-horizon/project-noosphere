@@ -11,6 +11,10 @@
   - type: Item
     storedOffset: 0,-2
   - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - NSCartridgeLowCaliber9x18 # Yes i know the nagant doesn't use 9x18, but i don't want to sprite and create another cartridge just for a single gun again :sob:
+    proto: NSCartridgeLowCaliber9x18Tier1
     capacity: 7
     chambers: [ True, True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null, null ]

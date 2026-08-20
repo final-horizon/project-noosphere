@@ -36,8 +36,9 @@
     whitelist:
       tags:
       - ShellShotgun
+      - NSShellShotgun
     capacity: 7
-    proto: ShellShotgun
+    proto: null
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
   - type: ContainerContainer

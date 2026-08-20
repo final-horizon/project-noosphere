@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseBullet
+  id: NSBulletLowCaliber45Tier1
+  categories: [ HideSpawnMenu ]
+  name: bullet (.45 T1)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30

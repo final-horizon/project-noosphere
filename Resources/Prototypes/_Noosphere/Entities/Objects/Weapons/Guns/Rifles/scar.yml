@@ -26,20 +26,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: NSMagazineRifle762x5120
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/ak74_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_ak74_open.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+            - NSMagazineRifle762x51
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+            - NSCartridgeRifle762x51
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

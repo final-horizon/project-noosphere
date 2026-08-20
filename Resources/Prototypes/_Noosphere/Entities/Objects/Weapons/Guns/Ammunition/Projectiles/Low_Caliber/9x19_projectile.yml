@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseBullet
+  id: NSBulletLowCaliber9x19Tier1
+  categories: [ HideSpawnMenu ]
+  name: bullet (9x19 T1)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 12

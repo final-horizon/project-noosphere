@@ -1,0 +1,21 @@
+- type: entity
+  parent: BaseBullet
+  id: NSBulletLowCaliber57x28Tier1
+  categories: [ HideSpawnMenu ]
+  name: bullet (57x28 T1)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+
+- type: entity
+  parent: BaseBullet
+  id: NSBulletLowCaliber57x28Tier2
+  categories: [ HideSpawnMenu ]
+  name: bullet (57x28 T2)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 37

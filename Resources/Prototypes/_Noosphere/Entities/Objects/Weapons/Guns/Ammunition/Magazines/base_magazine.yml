@@ -1,0 +1,319 @@
+- type: entity
+  id: NSBaseMagazine
+  name: "magazine"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+
+
+# Rifles
+
+- type: entity
+  id: NSBaseMagazineRifle
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 30
+
+
+- type: entity
+  id: NSBaseMagazineRifle762x39
+  name: "762x39 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle762x39
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle762x39
+
+- type: entity
+  id: NSBaseMagazineRifle762x51
+  name: "7.62x51 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle762x51
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle762x51
+
+- type: entity
+  id: NSBaseMagazineRifle545x39
+  name: "5.45x39 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle545x39
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle545x39
+
+
+- type: entity
+  id: NSBaseMagazineRifle556x45
+  name: "5.56x45 magazine"
+  parent: NSBaseMagazineRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineRifle556x45
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeRifle556x45
+
+
+# Sniper
+
+- type: entity
+  id: NSBaseMagazineSniper
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 20
+
+- type: entity
+  id: NSBaseMagazineSniper762x54
+  name: "7.62x54 magazine"
+  parent: NSBaseMagazineSniper
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSniper762x54
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeSniper762x54
+
+- type: entity
+  id: NSBaseMagazineSniper3x39
+  name: "3x39 magazine"
+  parent: NSBaseMagazineSniper
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSniper3x39
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeSniper3x39
+
+
+# Pistols
+
+- type: entity
+  id: NSBaseMagazinePistol
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 7
+
+- type: entity
+  id: NSBaseMagazinePistol9x19
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol9x19
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber9x19
+
+- type: entity
+  id: NSBaseMagazinePistol9x18
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol9x18
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber9x18
+
+- type: entity
+  id: NSBaseMagazinePistol45
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol45
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber45
+
+- type: entity
+  id: NSBaseMagazinePistol57x28
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol57x28
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber57x28
+
+- type: entity
+  id: NSBaseMagazinePistol762x25
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol762x25
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber762x25
+
+- type: entity
+  id: NSBaseMagazinePistol763x25
+  name: "placeholder"
+  parent: NSBaseMagazinePistol
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazinePistol763x25
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber763x25
+
+# SMGs
+
+- type: entity
+  id: NSBaseMagazineSMG
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 30
+
+- type: entity
+  id: NSBaseMagazineSMG762x25
+  name: "placeholder"
+  parent: NSBaseMagazineSMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMG762x25
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber762x25
+
+- type: entity
+  id: NSBaseMagazineSMG9x19
+  name: "placeholder"
+  parent: NSBaseMagazineSMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMG9x19
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber9x19
+
+- type: entity
+  id: NSBaseMagazineSMG45
+  name: "placeholder"
+  parent: NSBaseMagazineSMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineSMG45
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeLowCaliber45
+
+# LMGs
+
+- type: entity
+  id: NSBaseMagazineLMG
+  name: "magazine"
+  parent: NSBaseMagazine
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 250
+
+- type: entity
+  id: NSBaseMagazineLMGPKM
+  name: "placeholder"
+  parent: NSBaseMagazineLMG
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NSMagazineLMGPKM
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - NSCartridgeSniper762x54

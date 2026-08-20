@@ -1,0 +1,29 @@
+- type: entity
+  id: NSSlug12
+  name: NS pellet (.12 slug)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+        Structural: 15
+
+- type: entity
+  id: NSSlug20
+  name: NS pellet (.20 slug)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+        Structural: 30

@@ -4,3 +4,9 @@
   id: NSBaseWeaponRevolver
   description: A rooty tooty point and shooty.
   abstract: true
+  components:
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - NSCartridgeLowCaliber45
+      - NSCartridgeLowCaliber9x18

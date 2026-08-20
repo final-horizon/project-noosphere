@@ -21,12 +21,8 @@
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
   - type: BallisticAmmoProvider
     capacity: 10
-    proto: CartridgeLightRifle
+    proto: NSCartridgeRifle762x39FMJ
     whitelist:
       tags:
-      - CartridgeLightRifle
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
+      - NSCartridgeRifle762x39
   - type: Appearance

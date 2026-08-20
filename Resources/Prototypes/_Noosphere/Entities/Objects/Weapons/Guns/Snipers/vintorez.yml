@@ -1,5 +1,5 @@
 - type: entity
-  name: Vintorez
+  name: VSS Vintorez
   parent: [NSBaseWeaponSniper, BaseGunWieldable]
   id: NSWeaponSniperVintorez
   description: placeholder
@@ -28,20 +28,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineRifle
+        startingItem: NSMagazineSniper3x3920
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/val_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_val_open.ogg
         priority: 2
         whitelist:
           tags:
-          - MagazineRifle
+          - NSMagazineSniper3x39
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-          - CartridgeRifle
+          - NSCartridgeSniper3x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

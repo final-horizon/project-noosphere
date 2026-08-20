@@ -1,0 +1,73 @@
+- type: entity
+  id: NSMagazinePistol9x19
+  name: "9x19 Magazine 15x"
+  parent: NSBaseMagazinePistol9x19
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 15
+    proto: NSCartridgeLowCaliber9x19Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x19/9x19.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+
+
+- type: entity
+  id: NSMagazinePistol9x19Glock17
+  name: "Glock Magazine 17x"
+  parent: NSBaseMagazinePistol9x19
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 17
+    proto: NSCartridgeLowCaliber9x19Tier1
+  - type: Tag
+    tags:
+      - NSMagazinePistolGlock
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x19/glock/17.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+
+
+- type: entity
+  id: NSMagazinePistol9x19Glock33
+  name: "Glock Magazine 33x"
+  parent: NSMagazinePistol9x19Glock17
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 33
+    proto: NSCartridgeLowCaliber9x19Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x19/glock/33.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+

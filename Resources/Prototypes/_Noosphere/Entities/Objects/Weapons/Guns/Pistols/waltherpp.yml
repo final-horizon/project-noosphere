@@ -16,20 +16,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol
+        startingItem: NSMagazinePistol9x18
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
+            - NSMagazinePistol9x18
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - NSCartridgeLowCaliber9x18
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

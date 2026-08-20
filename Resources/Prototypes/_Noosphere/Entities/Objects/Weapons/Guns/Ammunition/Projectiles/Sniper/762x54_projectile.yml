@@ -1,0 +1,22 @@
+- type: entity
+  parent: BaseBullet
+  id: NSBulletSniper762x54FMJ
+  categories: [ HideSpawnMenu ]
+  name: bullet (7.62x54 FMJ)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+
+- type: entity
+  parent: BaseBullet
+  id: NSBulletSniper762x54HP
+  categories: [ HideSpawnMenu ]
+  name: bullet (7.62x54 HP)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 35
+        Piercing: 14

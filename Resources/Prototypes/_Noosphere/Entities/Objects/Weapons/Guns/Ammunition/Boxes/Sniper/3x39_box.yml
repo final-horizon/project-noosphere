@@ -1,0 +1,43 @@
+- type: entity
+  parent: NSBaseBoxSniper
+  id: NSBox3x39AP
+  name: Box of 3x39 AP (30)
+  description: Ammo box containing 3x39 AP
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeSniper3x39AP
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Sniper/3x39_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: ap
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: NSBaseBoxSniper
+  id: NSBox3x39HP
+  name: Box of 3x39 HP (30)
+  description: Ammo box containing 3x39 HP
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeSniper3x39HP
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Sniper/3x39_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: hp
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
