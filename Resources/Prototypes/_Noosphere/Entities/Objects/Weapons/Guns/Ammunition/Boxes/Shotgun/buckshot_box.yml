@@ -1,0 +1,51 @@
+
+- type: entity
+  parent: NSBaseBoxShotgun
+  id: NSBoxShotgunBuckshotDoubleOught
+  name: Box of Buckshot Double Ought
+  description: placeholder
+  components:
+    - type: Sprite
+      sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Shotgun/buckshot_0.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+    - type: BallisticAmmoProvider
+      proto: NSShellShotgunBuckshotDoubleOught
+      whitelist:
+        tags:
+        - NSShellShotgun
+      capacity: 16
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+
+- type: entity
+  parent: NSBaseBoxShotgun
+  id: NSBoxShotgunBuckshot4
+  name: Box of Buckshot 4
+  description: placeholder
+  components:
+    - type: Sprite
+      sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Shotgun/buckshot_4.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+    - type: BallisticAmmoProvider
+      proto: NSShellShotgunBuckshot4
+      whitelist:
+        tags:
+        - NSShellShotgun
+      capacity: 16
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance

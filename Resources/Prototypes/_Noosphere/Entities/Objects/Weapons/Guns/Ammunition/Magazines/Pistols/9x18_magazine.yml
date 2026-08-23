@@ -1,0 +1,44 @@
+- type: entity
+  id: NSMagazinePistol9x18
+  name: "9x18 Magazine 12x"
+  parent: NSBaseMagazinePistol9x18
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 12
+    proto: NSCartridgeLowCaliber9x18Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x18/9x18.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+
+
+- type: entity
+  id: NSMagazinePistol9x18Extended
+  name: "9x18 Extended Magazine 33x"
+  parent: NSBaseMagazinePistol9x18
+  description: Placeholder
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 33
+    proto: NSCartridgeLowCaliber9x18Tier1
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/Pistols/9x18/9x18_extended.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 9
+    zeroVisible: false
+  - type: Appearance

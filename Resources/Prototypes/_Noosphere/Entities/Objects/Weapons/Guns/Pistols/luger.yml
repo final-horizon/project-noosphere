@@ -7,25 +7,25 @@
   - type: Sprite
     sprite: _Noosphere/Objects/Weapons/Guns/Pistols/luger.rsi
   - type: Gun
-    selectedMode: SemiAuto # Override of BaseWeaponPistol to default to full-auto
+    selectedMode: SemiAuto
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistol
+        startingItem: NSMagazinePistol9x19
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
+            - NSMagazinePistol9x19
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - NSCartridgeLowCaliber9x19
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

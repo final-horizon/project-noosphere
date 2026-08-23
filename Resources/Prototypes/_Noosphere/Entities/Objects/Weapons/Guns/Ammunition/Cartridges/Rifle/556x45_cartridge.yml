@@ -1,0 +1,44 @@
+- type: entity
+  abstract: true
+  parent: NSBaseCartridgeRifle
+  id: NSBaseCartridgeRifle556x45
+  name: cartridge (5.56x45)
+  components:
+  - type: Tag
+    tags:
+      - NSCartridgeRifle556x45
+      - NSCartridgeRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  parent: NSBaseCartridgeRifle556x45
+  id: NSCartridgeRifle556x45FMJ
+  name: cartridge (5.56x45 FMJ)
+  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletRifle556x45FMJ
+
+
+- type: entity
+  parent: NSBaseCartridgeRifle556x45
+  id: NSCartridgeRifle556x45HP
+  name: cartridge (5.56x45 HP)
+  description: A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletRifle556x45HP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"

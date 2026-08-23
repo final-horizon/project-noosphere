@@ -1,0 +1,29 @@
+
+
+- type: entity
+  parent: NSBaseCartridgeLowCaliber
+  id: NSCartridgeLowCaliber763x25
+  name: NS cartridge (7.63x25)
+  description: Placeholder 
+  components:
+  - type: Tag
+    tags:
+      - NSCartridgeLowCaliber763x25
+      - NSCartridgeLowCaliber
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  parent: NSCartridgeLowCaliber763x25
+  id: NSCartridgeLowCaliber763x25Tier1
+  name: cartridge (7.63x25 T1)
+  description: placeholder
+  components:
+  - type: CartridgeAmmo
+    proto: NSBulletLowCaliber763x25Tier1

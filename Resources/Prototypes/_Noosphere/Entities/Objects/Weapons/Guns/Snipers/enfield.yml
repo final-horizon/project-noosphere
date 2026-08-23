@@ -18,11 +18,11 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
   - type: BallisticAmmoProvider
-    capacity: 10
-    proto: CartridgeLightRifle
+    capacity: 5
+    proto: NSCartridgeRifle762x51M885
     whitelist:
       tags:
-      - CartridgeLightRifle
+      - NSCartridgeRifle762x51
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

@@ -1,0 +1,31 @@
+- type: entity
+  id: NSShellShotgunBuckshot4
+  name: Buckshot 4B
+  parent: NSBaseShellShotgun
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Cartridges/Shotgun/buckshot_4.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: NSBuckshotNumber4
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: NSShellShotgunBuckshotDoubleOught
+  name: Buckshot 00B
+  parent: NSBaseShellShotgun
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Cartridges/Shotgun/buckshot_00.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: NSBuckshotNumberDoubleOught
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"

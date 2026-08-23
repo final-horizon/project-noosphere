@@ -1,5 +1,5 @@
 - type: entity
-  name: VAL
+  name: VSS VAL
   parent: NSBaseWeaponRifle
   id: NSWeaponRifleVal
   description: placeholder
@@ -28,7 +28,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: NSMagazineSniper3x3920
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/val_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_val_open.ogg
         priority: 2

@@ -1,0 +1,43 @@
+- type: entity
+  parent: NSBaseBoxSniper
+  id: NSBox762x54FMJ
+  name: Box of 7.62x54 FMJ (30)
+  description: Ammo box containing 7.62x54 FMJ
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeSniper762x54FMJ
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Sniper/762x54_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: fmj
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: NSBaseBoxSniper
+  id: NSBox762x54HP
+  name: Box of 7.62x54 HP
+  description: Ammo box containing 7.62x54 HP
+  components:
+  - type: BallisticAmmoProvider
+    proto: NSCartridgeSniper762x54HP
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Boxes/Sniper/762x54_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: hp
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

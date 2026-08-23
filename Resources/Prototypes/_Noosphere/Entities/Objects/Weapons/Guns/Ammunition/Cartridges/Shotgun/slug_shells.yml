@@ -1,0 +1,31 @@
+- type: entity
+  id: NSShellShotgunSlug12
+  name: Shell Slug 12
+  parent: NSBaseShellShotgun
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Cartridges/Shotgun/slug_12.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: NSSlug12
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: NSShellShotgunSlug20
+  name: Shell Slug 20
+  parent: NSBaseShellShotgun
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Cartridges/Shotgun/slug_20.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: NSSlug20
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"

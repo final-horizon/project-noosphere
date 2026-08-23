@@ -22,6 +22,7 @@
     minAngle: 21
     maxAngle: 32
     shotsPerBurst: 5
+    fireRate: 8
     availableModes:
     - FullAuto
     - SemiAuto
@@ -31,20 +32,20 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSubMachineGun
+        startingItem: NSMagazineSMG45
         insertSound: /Audio/_Noosphere/Weapons/Guns/Load/berettam38_load.ogg
         ejectSound: /Audio/_Noosphere/Weapons/Guns/Unload/unload_berettam38_open.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolSubMachineGun
+            - NSMagazineSMG45
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - NSCartridgeLowCaliber45
   - type: MagazineVisuals
     magState: mag
     steps: 1

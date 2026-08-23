@@ -1,0 +1,22 @@
+- type: entity
+  id: NSMagazineLMGPKM
+  name: "PKM Magazine 250x"
+  parent: NSBaseMagazineLMGPKM
+  description: 250-round ammunition box designed for the PKM.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 250
+    proto: NSCartridgeSniper762x54FMJ
+  - type: Sprite
+    sprite: _Noosphere/Objects/Weapons/Guns/Ammunition/Magazines/LMGs/762x54/pkm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+

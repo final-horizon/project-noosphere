@@ -1,0 +1,127 @@
+# Magazines
+
+## Rifles
+- type: Tag
+  id: NSMagazineRifle762x39
+
+- type: Tag
+  id: NSMagazineRifle545x39
+
+- type: Tag
+  id: NSMagazineRifle556x45
+
+- type: Tag
+  id: NSMagazineRifle762x51
+
+## Snipers
+- type: Tag
+  id: NSMagazineSniper762x54
+
+- type: Tag
+  id: NSMagazineSniper3x39
+
+## Pistols
+
+- type: Tag
+  id: NSMagazinePistol9x19
+
+- type: Tag
+  id: NSMagazinePistolGlock
+
+- type: Tag
+  id: NSMagazinePistol9x18
+
+- type: Tag
+  id: NSMagazinePistol45
+
+- type: Tag
+  id: NSMagazinePistol57x28
+
+- type: Tag
+  id: NSMagazinePistol762x25
+
+- type: Tag
+  id: NSMagazinePistol763x25
+
+- type: Tag
+  id: NSMagazinePistolMauser
+
+## SMGs
+
+- type: Tag
+  id: NSMagazineSMG
+
+- type: Tag
+  id: NSMagazineSMG762x25
+
+- type: Tag
+  id: NSMagazineSMGPPSh
+
+- type: Tag
+  id: NSMagazineSMG9x19
+
+- type: Tag
+  id: NSMagazineSMG45
+
+## LMGs
+
+- type: Tag
+  id: NSMagazineLMG
+
+- type: Tag
+  id: NSMagazineLMGPKM
+
+# Cartridges
+
+## Shells
+- type: Tag
+  id: NSShellShotgun
+
+## Rifles
+- type: Tag
+  id: NSCartridgeRifle
+
+- type: Tag
+  id: NSCartridgeRifle762x39
+
+- type: Tag
+  id: NSCartridgeRifle545x39
+
+- type: Tag
+  id: NSCartridgeRifle556x45
+
+- type: Tag
+  id: NSCartridgeRifle762x51
+
+## Snipers
+
+- type: Tag
+  id: NSCartridgeSniper
+
+- type: Tag
+  id: NSCartridgeSniper762x54
+
+- type: Tag
+  id: NSCartridgeSniper3x39
+
+## Low Caliber (i.e smgs, pistols)
+- type: Tag
+  id: NSCartridgeLowCaliber
+
+- type: Tag
+  id: NSCartridgeLowCaliber9x19
+
+- type: Tag
+  id: NSCartridgeLowCaliber9x18
+
+- type: Tag
+  id: NSCartridgeLowCaliber45
+
+- type: Tag
+  id: NSCartridgeLowCaliber57x28
+
+- type: Tag
+  id: NSCartridgeLowCaliber762x25
+
+- type: Tag
+  id: NSCartridgeLowCaliber763x25
