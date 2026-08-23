@@ -10,3 +10,16 @@
   - type: IconSmooth
     key: walls
     base: brick
+
+- type: entity
+  parent: BaseWall
+  id: FHWallMetalRusted
+  name: rusted metal wall
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Structures/Walls/metal_rusted.rsi
+  - type: Icon
+    sprite: _Noosphere/Structures/Walls/metal_rusted.rsi
+  - type: IconSmooth
+    key: walls
+    base: rusted

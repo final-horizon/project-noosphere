@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by Gasmasked",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "full"
+      },
+      {
+        "name": "rusted0",
+        "directions": 4
+      },
+      {
+        "name": "rusted1",
+        "directions": 4
+      },
+      {
+        "name": "rusted2",
+        "directions": 4
+      },
+      {
+        "name": "rusted3",
+        "directions": 4
+      },
+      {
+        "name": "rusted4",
+        "directions": 4
+      },
+      {
+        "name": "rusted5",
+        "directions": 4
+      },
+      {
+        "name": "rusted6",
+        "directions": 4
+      },
+      {
+        "name": "rusted7",
+        "directions": 4
+      }
+    ]
+  }
+  
