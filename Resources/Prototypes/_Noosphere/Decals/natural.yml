@@ -1,0 +1,128 @@
+# grass
+- type: decal
+  id: NSGrassTall1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/grass.rsi
+    state: grass_tall1
+
+- type: decal
+  id: NSGrassTall2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/grass.rsi
+    state: grass_tall2
+
+- type: decal
+  id: NSGrassTall3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/grass.rsi
+    state: grass_tall3
+
+- type: decal
+  id: NSGrassTall4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/grass.rsi
+    state: grass_tall4
+
+# root
+- type: decal
+  id: NSRoot1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/root.rsi
+    state: root1
+
+- type: decal
+  id: NSRoot2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/root.rsi
+    state: root2
+
+- type: decal
+  id: NSRoot3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/root.rsi
+    state: root3
+
+- type: decal
+  id: NSRoot4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/root.rsi
+    state: root4
+
+- type: decal
+  id: NSRoot5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/root.rsi
+    state: root5
+
+- type: decal
+  id: NSRoot6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/root.rsi
+    state: root6
+
+# branch
+- type: decal
+  id: NSBranch1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/branch.rsi
+    state: branch1
+
+- type: decal
+  id: NSBranch2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/branch.rsi
+    state: branch2
+
+- type: decal
+  id: NSBranch3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/branch.rsi
+    state: branch3
+
+- type: decal
+  id: NSBranch4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Noosphere/Decals/branch.rsi
+    state: branch4

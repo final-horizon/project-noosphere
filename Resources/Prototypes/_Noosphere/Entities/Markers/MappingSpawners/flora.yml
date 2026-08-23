@@ -1,0 +1,35 @@
+- type: entity
+  id: NSMappingSpawnerFloraForestStandard
+  name: Mapping Spawner Forest Standard
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Noosphere/Objects/Decoration/trees.rsi
+        state: tree6
+  - type: PlacementReplacement
+    key: mappingspawner
+  - type: MappingSpawner
+    table: !type:GroupSelector
+      children:
+      - !type:GroupSelector
+        prob: 0.20
+        children:
+        - id: NSTree6
+        - id: NSTree7
+        - id: NSTree8
+        - id: NSTree9
+        - id: NSTree10
+      - !type:GroupSelector
+        prob: 0.50
+        children:
+        - id: NSDecalSpawnerGrassTall
+      - !type:GroupSelector
+        prob: 0.20
+        children:
+        - id: NSDecalSpawnerRoot
+      - !type:GroupSelector
+        prob: 0.10
+        children:
+        - id: NSDecalSpawnerBranch

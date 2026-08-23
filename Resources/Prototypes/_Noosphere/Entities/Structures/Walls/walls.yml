@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseWall
+  id: FHWallBrick
+  name: brick wall
+  components:
+  - type: Sprite
+    sprite: _Noosphere/Structures/Walls/brick.rsi
+  - type: Icon
+    sprite: _Noosphere/Structures/Walls/brick.rsi
+  - type: IconSmooth
+    key: walls
+    base: brick
