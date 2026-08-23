@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseWall
-  id: FHWallBrick
+  id: NSWallBrick
   name: brick wall
   components:
   - type: Sprite
@@ -13,7 +13,7 @@
 
 - type: entity
   parent: BaseWall
-  id: FHWallMetalRusted
+  id: NSWallMetalRusted
   name: rusted metal wall
   components:
   - type: Sprite
