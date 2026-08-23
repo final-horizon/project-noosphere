@@ -387,7 +387,6 @@
     implantAction: FakeMindShieldToggleAction
     implantComponents:
     - type: FakeMindShield # TODO: put the component on the implant and use implant relay events for the status icon
-  - type: FakeMindShieldImplant
 
 # Sec and Command implants
 

@@ -638,8 +638,6 @@
       params:
         variation: 0.250
         volume: 5
-  - type: Stunbaton
-    energyPerUse: 50
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:

@@ -424,7 +424,6 @@
       - Truncheon
       - HandGrenade
       components:
-      - Stunbaton
       - FlashOnTrigger
       - SmokeOnTrigger
       - Flash
@@ -441,10 +440,6 @@
         whitelist:
           components:
           - FlashOnTrigger
-      stunbaton:
-        whitelist:
-          components:
-          - Stunbaton
       tear_gas_grenade:
         whitelist:
           components:

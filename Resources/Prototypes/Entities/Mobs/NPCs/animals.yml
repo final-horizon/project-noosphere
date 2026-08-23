@@ -274,7 +274,6 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
-  - type: ExaminableHunger
   - type: ReplacementAccent
     accent: chicken
   - type: SentienceTarget
@@ -721,7 +720,6 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
-  - type: ExaminableHunger
   - type: ReplacementAccent
     accent: duck
   - type: SentienceTarget
@@ -903,11 +901,6 @@
   - type: SolutionManager
     solutions:
     - SolutionUdder
-  - type: Udder
-    reagentId: Milk
-    quantityPerUpdate: 25
-    growthDelay: 30
-  - type: ExaminableHunger
   - type: ToolRefinable
     refineResult:
     - id: FoodMeat
@@ -1065,12 +1058,6 @@
     solutions:
     - SolutionUdderGoat
     - SolutionWool
-  - type: Udder
-    reagentId: MilkGoat
-    quantityPerUpdate: 25
-    growthDelay: 20
-  - type: ExaminableHunger
-  - type: Wooly
   - type: Edible
     destroyOnEmpty: false
     solution: wool
@@ -1195,19 +1182,6 @@
     solutions:
     - SolutionUdderSheep
     - SolutionWoolSheep
-  - type: Udder
-    reagentId: MilkSheep
-    quantityPerUpdate: 25
-    growthDelay: 20
-  - type: ExaminableHunger
-  - type: Wooly
-  - type: Shearable
-    targetSolutionName: wool
-    shearedProductId: MaterialCotton1 # Cotton is spawned because there is no wool item.
-    solutionPerProduct: 2.5 # 1 Cotton contains 2.5 Fibre, therefore this is the same.
-    toolQuality: Shearing
-    shearableMarkupText: sheep-shearable-examine-markup
-    unShearableMarkupText: sheep-not-shearable-examine-markup
   - type: Edible
     destroyOnEmpty: false
     solution: wool
@@ -1302,8 +1276,6 @@
     energy: 0.5
   - type: RgbLightController
     layers: [ 1 ]
-  - type: Wooly
-    reagentId: SpaceDrugs
   - type: Shearable
     targetSolutionName: wool
     shearedProductId: LeavesCannabisRainbow

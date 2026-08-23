@@ -62,8 +62,6 @@
   blacklist:
     components:
       - BorgChassis
-  components:
-    - type: Muted
 
 - type: trait
   id: Paracusia

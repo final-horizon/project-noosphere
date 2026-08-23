@@ -1540,9 +1540,6 @@
   metabolisms:
     Digestion:
       effects:
-      - !type:GenericStatusEffect
-        key: Muted
-        component: Muted
       - !type:SatiateThirst
         factor: 2
 
@@ -2051,9 +2048,6 @@
       metabolites:
         Ethanol: 0.14
       effects:
-      - !type:GenericStatusEffect
-        key: Muted
-        component: Muted
       - !type:SatiateThirst
         factor: 2
 

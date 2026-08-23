@@ -475,9 +475,6 @@
         variation: 0.05
   - type: MobPrice
     price: 600
-  - type: Wooly
-    quantity: 10
-    growthDelay: 120 #2 minutes
   - type: Speech
     speechSounds: SheepSpace
     speechVerb: Sheep

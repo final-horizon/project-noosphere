@@ -121,11 +121,5 @@
         effectProto: StatusEffectSeeingRainbow
         time: 5
         type: Add
-    Digestion:
-      effects:
-      - !type:GenericStatusEffect
-        key: Muted
-        component: Muted
-        time: 5
   footstepSound:
     collection: FootstepSlime

@@ -162,7 +162,6 @@
         whitelist:
           components:
           - BatteryAmmoProvider
-          - Stunbaton
           - PowerCell
         blacklist:
           tags:
@@ -190,7 +189,6 @@
         whitelist:
           components:
           - BatteryAmmoProvider
-          - Stunbaton
           - PowerCell
         blacklist:
           tags:
@@ -222,7 +220,6 @@
         whitelist:
           components:
           - BatteryAmmoProvider
-          - Stunbaton
         blacklist:
           tags:
           - PotatoBattery

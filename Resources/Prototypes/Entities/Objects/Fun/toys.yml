@@ -167,7 +167,6 @@
   - type: VentriloquistPuppet
   - type: Item
     size: Normal
-  - type: Muted
   - type: TypingIndicator
     proto: robot
   - type: Actions
